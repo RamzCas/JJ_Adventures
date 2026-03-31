@@ -1803,22 +1803,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &653903352 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7321021236977652217, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-  m_PrefabInstance: {fileID: 1087940683}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &653903354 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7011634135259850837, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-  m_PrefabInstance: {fileID: 1087940683}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653903352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &660709951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,54 +3140,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 381303708030032940, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: SprintUI
-      value: 
-      objectReference: {fileID: 653903352}
-    - target: {fileID: 381303708030032940, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: SprintImage
-      value: 
-      objectReference: {fileID: 653903354}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1919.9999
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.009851852
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.009851852
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.009851852
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.00000008940697
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821815267607445931, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000000029802322
-      objectReference: {fileID: 0}
     - target: {fileID: 4094319061910387600, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: m_Name
       value: PlayerContainer
@@ -3247,22 +3183,6 @@ PrefabInstance:
     - target: {fileID: 4304026240085203776, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7321021236977652217, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7590052219082776991, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7696122518840395698, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_RenderMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7696122518840395698, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

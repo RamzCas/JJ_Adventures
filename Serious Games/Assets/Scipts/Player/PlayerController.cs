@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 MoveInput;
 
     [Header("Sprint")]
+    public bool CanSprint;
     public bool IsSprinting;
     public float SprintSpeed;
     public Image SprintImage;
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
         Controls = new PlayerControler();
         rb = GetComponent<Rigidbody2D>();
         CurrentSpeed = Speed;
+        CanSprint = true;
     }
 
     private void OnEnable()
@@ -80,18 +83,21 @@ public class PlayerController : MonoBehaviour
   
     public void Sprint(InputAction.CallbackContext context) 
     {
-        if(context.performed) 
+        if (CanSprint) 
         {
-            IsSprinting = true;
-            Debug.Log("Sprint");
-            CurrentSpeed = SprintSpeed;
-        }
+            if (context.performed)
+            {
+                IsSprinting = true;
+                Debug.Log("Sprint");
+                CurrentSpeed = SprintSpeed;
+            }
 
-        if (context.canceled) 
-        {
-            IsSprinting = false;
-            Debug.Log("Walk");
-            CurrentSpeed = Speed;
+            if (context.canceled)
+            {
+                IsSprinting = false;
+                Debug.Log("Walk");
+                CurrentSpeed = Speed;
+            }
         }
     }
 
@@ -107,12 +113,22 @@ public class PlayerController : MonoBehaviour
         if (!IsSprinting)
         {
             SprintUI.SetActive(false);
-            SprintImage.fillAmount -= 0.5f * Time.deltaTime;
+            SprintImage.fillAmount += 0.3f * Time.deltaTime;
         }
 
         if(SprintImage.fillAmount <= 0) 
         {
+            CanSprint = false;
             IsSprinting = false;
+            CurrentSpeed = Speed;
+            StartCoroutine(ReSetSpeed());
         }
+    }
+
+    public IEnumerator ReSetSpeed() 
+    {
+        yield return new WaitForSeconds(2f);
+        SprintImage.fillAmount = 1;
+        CanSprint = true;
     }
 }

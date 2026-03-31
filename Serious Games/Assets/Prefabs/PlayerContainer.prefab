@@ -70,7 +70,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.32
+  orthographic size: 5.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -228,7 +228,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 5.32
+    OrthographicSize: 5.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -439,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &752608910863532630
 RectTransform:
   m_ObjectHideFlags: 0
@@ -489,7 +489,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 6354639774860616899, guid: dac44233188c8774587bcfad34e65f36, type: 3}
   m_Type: 3
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
   m_FillAmount: 1
@@ -524,8 +524,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8511679598947737154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.009851852, y: 0.009851852, z: 0.009851852}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 752608910863532630}
@@ -533,9 +533,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.00000008940697, y: 0.000000029802322}
+  m_SizeDelta: {x: 1919.9999, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7696122518840395698
 Canvas:
   m_ObjectHideFlags: 0
@@ -545,7 +545,7 @@ Canvas:
   m_GameObject: {fileID: 8511679598947737154}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 7559985725777122011}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -557,7 +557,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &7590052219082776991
 MonoBehaviour:
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1421216898745637039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,10 +775,11 @@ MonoBehaviour:
   CurrentSpeed: 0
   Rotation: 5
   rb: {fileID: 3864863002099458647}
+  CanSprint: 0
   IsSprinting: 0
   SprintSpeed: 10
-  SprintImage: {fileID: 0}
-  SprintUI: {fileID: 0}
+  SprintImage: {fileID: 7011634135259850837}
+  SprintUI: {fileID: 7321021236977652217}
   InteractRange: 4
   RayDistance: 4
   Player: {fileID: 3057062308773307631}
