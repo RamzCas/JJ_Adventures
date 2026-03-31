@@ -1,15 +1,22 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
     public float Speed;
-    public bool IsSprinting;
-    public float SprintSpeed;
+    public float CurrentSpeed;
+   
     public float Rotation;
     public Rigidbody2D rb;
     private Vector2 MoveInput;
+
+    [Header("Sprint")]
+    public bool IsSprinting;
+    public float SprintSpeed;
+    public Image SprintImage;
+    public GameObject SprintUI;
 
     [Header("Interaction")]
     public float InteractRange;
@@ -22,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         Controls = new PlayerControler();
         rb = GetComponent<Rigidbody2D>();
+        CurrentSpeed = Speed;
     }
 
     private void OnEnable()
@@ -29,12 +37,15 @@ public class PlayerController : MonoBehaviour
         Controls.Enable();
         Controls.Player.Interaction.performed += Interact;
         Controls.Player.Sprint.performed += Sprint;
+        Controls.Player.Sprint.canceled += Sprint;
     }
 
     private void OnDisable()
     {
-        Controls.Disable();
+        Controls.Player.Interaction.performed -= Interact;
+        Controls.Player.Sprint.performed -= Sprint;
         Controls.Player.Sprint.canceled -= Sprint;
+        Controls.Disable();
     }
 
     private void Update()
@@ -44,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = MoveInput * Speed;
+        rb.linearVelocity = MoveInput * CurrentSpeed;
 
         if (MoveInput != Vector2.zero)
         {
@@ -53,6 +64,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Ray();
+        SprintThings();
     }
 
     public void Ray()
@@ -68,6 +80,39 @@ public class PlayerController : MonoBehaviour
   
     public void Sprint(InputAction.CallbackContext context) 
     {
-        
+        if(context.performed) 
+        {
+            IsSprinting = true;
+            Debug.Log("Sprint");
+            CurrentSpeed = SprintSpeed;
+        }
+
+        if (context.canceled) 
+        {
+            IsSprinting = false;
+            Debug.Log("Walk");
+            CurrentSpeed = Speed;
+        }
+    }
+
+
+    public void SprintThings() 
+    {
+        if (IsSprinting) 
+        {
+            SprintUI.SetActive(true);
+            SprintImage.fillAmount -= 0.5f * Time.deltaTime;
+        }
+
+        if (!IsSprinting)
+        {
+            SprintUI.SetActive(false);
+            SprintImage.fillAmount -= 0.5f * Time.deltaTime;
+        }
+
+        if(SprintImage.fillAmount <= 0) 
+        {
+            IsSprinting = false;
+        }
     }
 }
