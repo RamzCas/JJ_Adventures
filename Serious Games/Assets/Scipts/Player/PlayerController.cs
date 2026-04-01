@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         CurrentSpeed = Speed;
         CanSprint = true;
+        CanInteract = true;
     }
 
     private void OnEnable()
@@ -73,7 +74,21 @@ public class PlayerController : MonoBehaviour
 
     public void Ray()
     {
-     
+        /*RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.up * RayDistance);
+        Debug.DrawRay(transform.position, Vector2.up * RayDistance, Color.yellow);*/
+
+        Ray2D ray2D = new Ray2D(Player.position, Player.up);
+        RaycastHit2D hit2D;
+
+        Debug.DrawRay(Player.position, Player.up * RayDistance, Color.yellow);
+        
+       /* if (Physics2D.Raycast(ray2D,out hit2D, RayDistance)) 
+        {
+
+        }*/
+
+       
+
     }
 
     public void Interact(InputAction.CallbackContext context) 
