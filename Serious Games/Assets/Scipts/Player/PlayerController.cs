@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         CurrentSpeed = Speed;
         CanSprint = true;
-        CanInteract = true;
+        //CanInteract = true;
     }
 
     private void OnEnable()
@@ -77,27 +77,44 @@ public class PlayerController : MonoBehaviour
         /*RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.up * RayDistance);
         Debug.DrawRay(transform.position, Vector2.up * RayDistance, Color.yellow);*/
 
-        Ray ray = new Ray(Player.position, Player.up);
-        RaycastHit hit;
+        /* Ray ray = new Ray(Player.position, Player.up);
+           RaycastHit hit;
 
+           Debug.DrawRay(Player.position, Player.up * RayDistance, Color.yellow);
+
+           if(Physics.Raycast(ray, out hit, RayDistance)) 
+           {
+              Debug.Log(hit.collider.gameObject.name);
+           }*/
+
+        RaycastHit2D hit2D = Physics2D.Raycast(Player.position, Player.up, RayDistance);
         Debug.DrawRay(Player.position, Player.up * RayDistance, Color.yellow);
 
-        if(Physics.Raycast(ray, out hit, RayDistance)) 
+        if (hit2D.collider)
         {
-           Debug.Log(hit.collider.gameObject.name);
+            if (hit2D.collider.CompareTag("Inter"))
+            {
+                //Debug.Log("Interactable");
+                CanInteract = true;
+            }
         }
-        
 
-       /* RaycastHit2D hit2D = Physics2D.Raycast(Player.position, Player.up, RayDistance);
-        Debug.DrawRay(Player.position, Player.up * RayDistance, Color.yellow);*/
 
-        
-
+        else 
+        {
+            CanInteract = false;
+        }
     }
 
     public void Interact(InputAction.CallbackContext context) 
     {
-        Debug.Log("Interact");
+        if (CanInteract) 
+        {
+            if (context.performed) 
+            {
+                Debug.Log("Interact");
+            }
+        }
     }
 
   
