@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float Speed;
     public float CurrentSpeed;
+    public bool CanMove;
    
     public float Rotation;
     public Rigidbody2D rb;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         CurrentSpeed = Speed;
         CanSprint = true;
+        CanMove = true;
         //CanInteract = true;
     }
 
@@ -43,6 +45,8 @@ public class PlayerController : MonoBehaviour
         Controls.Player.Interaction.performed += Interact;
         Controls.Player.Sprint.performed += Sprint;
         Controls.Player.Sprint.canceled += Sprint;
+        //Controls.Player.Dialog.performed += DialogControls;
+        //Controls.Player.Dialog.canceled += DialogControls;
     }
 
     private void OnDisable()
@@ -50,6 +54,10 @@ public class PlayerController : MonoBehaviour
         Controls.Player.Interaction.performed -= Interact;
         Controls.Player.Sprint.performed -= Sprint;
         Controls.Player.Sprint.canceled -= Sprint;
+        //Controls.Player.Dialog.performed -= DialogControls;
+        //Controls.Player.Dialog.canceled -= DialogControls;
+
+
         Controls.Disable();
     }
 
@@ -60,12 +68,16 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = MoveInput * CurrentSpeed;
-
-        if (MoveInput != Vector2.zero)
+        if (CanMove) 
         {
-            float angle = Mathf.Atan2(MoveInput.y, MoveInput.x) * Mathf.Rad2Deg - 90f;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
+            rb.linearVelocity = MoveInput * CurrentSpeed;
+
+            if (MoveInput != Vector2.zero)
+            {
+                float angle = Mathf.Atan2(MoveInput.y, MoveInput.x) * Mathf.Rad2Deg - 90f;
+                transform.rotation = Quaternion.Euler(0, 0, angle);
+            }
+
         }
 
         Ray();
@@ -94,7 +106,7 @@ public class PlayerController : MonoBehaviour
         {
             if (hit2D.collider.CompareTag("Inter"))
             {
-                //Debug.Log("Interactable");
+                Debug.Log("Interactable");
                 CanInteract = true;
             }
         }
@@ -112,7 +124,17 @@ public class PlayerController : MonoBehaviour
         {
             if (context.performed) 
             {
-                Debug.Log("Interact");
+                RaycastHit2D hit2D = Physics2D.Raycast(Player.position, Player.up, RayDistance);
+                Debug.DrawRay(Player.position, Player.up * RayDistance, Color.blueViolet);
+
+                if (hit2D.collider)
+                {
+                    if (hit2D.collider.CompareTag("Inter"))
+                    {
+                        Debug.Log("Interactable");
+                        hit2D.collider.gameObject.SetActive(false);
+                    }
+                }
             }
         }
     }
@@ -169,4 +191,10 @@ public class PlayerController : MonoBehaviour
         SprintImage.fillAmount = 1;
         CanSprint = true;
     }
+
+
+  /*  public void DialogControls(InputAction.CallbackContext context) 
+    { 
+    
+    }*/
 }
