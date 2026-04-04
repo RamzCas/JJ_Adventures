@@ -7,7 +7,7 @@ public class Diolog_Test : MonoBehaviour
 {
     [Header("Components")]
     public GameObject InteractPt;
-    public GameObject[] DialogBoards;
+    public GameObject[] DialogBoards;//Some reasone we need to add an etra point to work 
     public GameObject Canvas;
 
     [Header("Array")]
