@@ -36,8 +36,6 @@ public class Diolog_Test : MonoBehaviour
     private void OnDisable()
     {
         Controls.Player.Dialog.performed -= DialogControls;
-
-
         Controls.Disable();
     }
 
@@ -49,7 +47,27 @@ public class Diolog_Test : MonoBehaviour
             InConvo = true;
             PlayerController.CanMove = false;
             Canvas.SetActive(true); 
-            
+        }
+
+        else 
+        {
+            InConvo = false;
+            PlayerController.CanMove = true;
+            Canvas.SetActive(false);
+        }
+
+        if(InConvo) 
+        {
+            DialogBoards[CurrentNumberOfDialog].gameObject.SetActive(true);
+        }
+        
+        if(CurrentNumberOfDialog >= NumberOfDialog - 1f) 
+        {
+            Debug.Log("EndConvo");
+            InConvo = false;
+            PlayerController.CanMove = true;
+            Canvas.SetActive(false);
+            CurrentNumberOfDialog = 0;
         }
     }
 
