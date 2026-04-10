@@ -5957,41 +5957,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 798746388}
     m_Modifications:
-    - target: {fileID: 392962160440045406, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-      propertyPath: m_text
-      value: '""'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-      propertyPath: TextMeshPro
-      value: 
-      objectReference: {fileID: 6371469010840006110}
     - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 387549778}
-    - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-      propertyPath: DialogLines.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-      propertyPath: 'DialogLines.Array.data[0]'
-      value: Hello
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-      propertyPath: 'DialogLines.Array.data[1]'
-      value: Welcome to Jozi
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-      propertyPath: 'DialogLines.Array.data[2]'
-      value: Hope you enjoy your trip!
-      objectReference: {fileID: 0}
     - target: {fileID: 4675888346052152807, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: m_Name
       value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 8841224133751172112, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8866974834891809243, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6033,28 +6005,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8936813759844014339, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2606541685130019580, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-    - {fileID: 6339755704449156291, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331364b21c78e9d458443573a5daa816, type: 3}
---- !u!114 &6371469010840006110 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 392962160440045406, guid: 331364b21c78e9d458443573a5daa816, type: 3}
-  m_PrefabInstance: {fileID: 6371469010840006109}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
