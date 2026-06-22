@@ -27,6 +27,13 @@ public class PlayerController : MonoBehaviour
     public float RayDistance;
     public Transform Player;
 
+    [Header("UI Guide")]
+    public int UI_Count;
+    public GameObject UI_Base;
+   /* public GameObject PlayerCam;
+    public GameObject OverviewCam;*/
+
+
     PlayerControler Controls;
 
     private void Awake()
@@ -45,6 +52,7 @@ public class PlayerController : MonoBehaviour
         Controls.Player.Interaction.performed += Interact;
         Controls.Player.Sprint.performed += Sprint;
         Controls.Player.Sprint.canceled += Sprint;
+        Controls.Player.Map.performed += Map_UI;
         //Controls.Player.Dialog.performed += DialogControls;
         //Controls.Player.Dialog.canceled += DialogControls;
     }
@@ -54,6 +62,7 @@ public class PlayerController : MonoBehaviour
         Controls.Player.Interaction.performed -= Interact;
         Controls.Player.Sprint.performed -= Sprint;
         Controls.Player.Sprint.canceled -= Sprint;
+        Controls.Player.Map.canceled -= Map_UI;
         //Controls.Player.Dialog.performed -= DialogControls;
         //Controls.Player.Dialog.canceled -= DialogControls;
 
@@ -64,6 +73,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         MoveInput = Controls.Player.Movement.ReadValue<Vector2>();
+        MapUI_Manager();
     }
 
     private void FixedUpdate()
@@ -78,7 +88,10 @@ public class PlayerController : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, angle);
             }
 
+          
         }
+
+       
 
         Ray();
         SprintThings();
@@ -192,9 +205,32 @@ public class PlayerController : MonoBehaviour
         CanSprint = true;
     }
 
+    public void Map_UI(InputAction.CallbackContext context) 
+    {
+        print("open Map");
+        UI_Count++;
+    }
 
-  /*  public void DialogControls(InputAction.CallbackContext context) 
-    { 
-    
-    }*/
+    public void MapUI_Manager() 
+    {
+     if(UI_Count == 1) 
+        {
+            UI_Base.SetActive(true);
+            //CanMove = false;
+            CurrentSpeed = 0;
+            /*PlayerCam.SetActive(false);
+            OverviewCam.SetActive(true);*/
+        }
+
+     if (UI_Count >= 2) 
+        {
+            UI_Base.SetActive(false);
+            // CanMove = true;
+            CurrentSpeed = Speed;
+            UI_Count = 0;
+       /*     PlayerCam.SetActive(true);
+            OverviewCam.SetActive(false);*/
+        }
+    }
+  
 }
