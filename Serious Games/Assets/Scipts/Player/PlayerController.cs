@@ -30,8 +30,9 @@ public class PlayerController : MonoBehaviour
     [Header("UI Guide")]
     public int UI_Count;
     public GameObject UI_Base;
-   /* public GameObject PlayerCam;
-    public GameObject OverviewCam;*/
+    /* public GameObject PlayerCam;
+     public GameObject OverviewCam;*/
+    public GameObject InteractKeybine;
 
 
     PlayerControler Controls;
@@ -95,6 +96,7 @@ public class PlayerController : MonoBehaviour
 
         Ray();
         SprintThings();
+        ShowInteractKey();
     }
 
     public void Ray()
@@ -232,5 +234,22 @@ public class PlayerController : MonoBehaviour
             OverviewCam.SetActive(false);*/
         }
     }
-  
+  public void ShowInteractKey() 
+    {
+        RaycastHit2D hit2D = Physics2D.Raycast(Player.position, Player.up, RayDistance);
+        Debug.DrawRay(Player.position, Player.up * RayDistance, Color.blueViolet);
+
+        if (hit2D.collider)
+        {
+            if (hit2D.collider.CompareTag("Inter"))
+            {
+                InteractKeybine.SetActive(true);
+            }
+        }
+
+        else 
+        {
+            InteractKeybine.SetActive(false);
+        }
+    }
 }
