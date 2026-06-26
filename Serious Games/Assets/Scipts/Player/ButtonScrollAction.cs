@@ -11,6 +11,8 @@ public class ButtonScrollAction : MonoBehaviour
 
     private int currentIndex = 0;
 
+    public GameObject[] OtherButtons;
+
     private void Start()
     {
         for (int i = 0; i < list.Count; i++)
@@ -31,6 +33,12 @@ public class ButtonScrollAction : MonoBehaviour
         if(num >= 2) 
         {
             options.SetActive(false);
+
+            foreach (GameObject o in OtherButtons)
+            {
+                o.SetActive(true);
+            }
+
             num = 0;    
         }
 
@@ -41,7 +49,13 @@ public class ButtonScrollAction : MonoBehaviour
     public void ShowOptions() 
     {
         options.SetActive(true);
+        
         num++;
+
+        foreach (GameObject o in OtherButtons) 
+        {
+            o.SetActive(false);
+        }
     }
 
 
