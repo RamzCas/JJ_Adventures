@@ -6,6 +6,7 @@ public class QuestManager : MonoBehaviour
     [Header("Quest constrants")]
     public bool startQuest;
     public bool stopQuest;
+    public GameObject giverOfQuestGameObject;
 
     [Header("Badges")]
     public Image[] BadgeHolder;
@@ -13,12 +14,27 @@ public class QuestManager : MonoBehaviour
     public Sprite[] Stamps;
     public int StampsCount;
 
+    [Header("Map")]
+    public GameObject icon;
+
 
     private void Update()
     {
+
+        if (startQuest) 
+        {
+            icon.SetActive(true);
+        }
+
+        if(!startQuest) 
+        {
+            icon.SetActive(false);
+        }
+
         if (stopQuest) 
         {
             BadgeHolder[badgeNumber].sprite = Stamps[StampsCount];
+            giverOfQuestGameObject.SetActive(false);
         }
     }
 }

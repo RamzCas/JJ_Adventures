@@ -90,6 +90,16 @@ public class Diolog_Test : MonoBehaviour
         {
             NumberOfDialog = DialogLines.Length;
         }
+
+
+        if (CurrentNumberOfDialog >= NumberOfDialog - 1f && enderOfQuest && QuestManager.startQuest)
+        {
+            QuestManager.startQuest = false;
+            QuestManager.stopQuest = true;
+
+            InteractPt.SetActive(true);
+            InConvo = false;
+        }
     }
 
 
@@ -151,11 +161,15 @@ public class Diolog_Test : MonoBehaviour
             //Debug.Log("Start Quest");
         }
 
-        if (CurrentNumberOfDialog >= NumberOfDialog - 1f && enderOfQuest && QuestManager.startQuest)
+        /*if (CurrentNumberOfDialog >= NumberOfDialog - 1f && enderOfQuest && QuestManager.startQuest)
         {
             QuestManager.startQuest = false;
             QuestManager.stopQuest = true;
-        }
+           
+            //QuestNPC = false;
+        }*/
+
+      
     }
 
 
