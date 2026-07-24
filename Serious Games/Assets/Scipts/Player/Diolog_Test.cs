@@ -10,8 +10,11 @@ public class Diolog_Test : MonoBehaviour
     public GameObject InteractPt;
     //public GameObject[] DialogBoards;//Some reasone we need to add an etra point to work 
     public string[] DialogLines;
+  
     public TextMeshProUGUI TextMeshPro;
     public GameObject Canvas;
+
+   
 
     [Header("Array")]
     public int NumberOfDialog;
@@ -22,6 +25,16 @@ public class Diolog_Test : MonoBehaviour
 
     [Header("Other Scripts")]
     public PlayerController PlayerController;
+    public QuestManager QuestManager;
+    /*public Start_Fetch_Qeust Start_Fetch_Quest;
+    public FInished_Fetch_Quest Finished_Fetch_Quest;*/
+
+    [Header("Quest Settings")]
+    public bool giverOfQuest;
+    public bool QuestNPC;
+    public bool enderOfQuest;
+    public string[] questDialog;
+
 
     PlayerControler Controls;
 
@@ -29,7 +42,26 @@ public class Diolog_Test : MonoBehaviour
     {
         Controls = new PlayerControler();
         //NumberOfDialog = DialogBoards.Length;
-        NumberOfDialog = DialogLines.Length;
+        //NumberOfDialog = DialogLines.Length;
+
+        if (QuestNPC) 
+        {
+            if (QuestManager.startQuest)
+            {
+                NumberOfDialog = questDialog.Length;
+            }
+
+            else
+            {
+                NumberOfDialog = DialogLines.Length;
+            }
+        }
+
+        else 
+        {
+            NumberOfDialog = DialogLines.Length;
+        }
+       
     }
 
     private void OnEnable()
@@ -43,6 +75,25 @@ public class Diolog_Test : MonoBehaviour
         Controls.Player.Dialog.performed -= DialogControls;
         Controls.Disable();
     }
+
+
+
+
+    private void Update()
+    {
+        if (QuestManager.startQuest) 
+        {
+            NumberOfDialog = questDialog.Length;
+        }
+
+        if(!QuestManager.startQuest)
+        {
+            NumberOfDialog = DialogLines.Length;
+        }
+    }
+
+
+
 
     private void FixedUpdate()
     {
@@ -62,8 +113,19 @@ public class Diolog_Test : MonoBehaviour
             Canvas.SetActive(true);*/
 
             Canvas.SetActive(true);
-            PlayerController.CanMove = false;
-            TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
+            PlayerController.CanMove = false; 
+
+            if(QuestManager.startQuest && QuestNPC) 
+            {
+                TextMeshPro.text = questDialog[CurrentNumberOfDialog];
+            }
+
+            else 
+            {
+                TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
+            }
+            
+       
         }
 
         if (!InConvo) 
@@ -76,15 +138,23 @@ public class Diolog_Test : MonoBehaviour
 
         if(CurrentNumberOfDialog >= NumberOfDialog - 1f) 
         {
-            Debug.Log("EndConvo");
+            
+            //Debug.Log("EndConvo");
             InteractPt.SetActive(true);
             InConvo = false;
+        }
 
-           /*foreach( GameObject dialog in DialogBoards) 
-            {
-                dialog.SetActive(false);
-            }*/
 
+        if (CurrentNumberOfDialog >= NumberOfDialog - 1f && giverOfQuest)
+        {
+            QuestManager.startQuest = true;
+            //Debug.Log("Start Quest");
+        }
+
+        if (CurrentNumberOfDialog >= NumberOfDialog - 1f && enderOfQuest && QuestManager.startQuest)
+        {
+            QuestManager.startQuest = false;
+            QuestManager.stopQuest = true;
         }
     }
 
