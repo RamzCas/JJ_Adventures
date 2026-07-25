@@ -1139,6 +1139,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &350720793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8841224133751172112, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+  m_PrefabInstance: {fileID: 6371469010840006109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &387549778 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 381303708030032940, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
@@ -2295,6 +2300,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &734999443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 734999444}
+  - component: {fileID: 734999445}
+  m_Layer: 0
+  m_Name: Game_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &734999444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734999443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.41752, y: 4.67781, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &734999445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734999443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29709d70d408e04ead84de44941d68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game_Manager
+  maxStamps: 0
+  currentStamps: 0
+--- !u!114 &743999786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 392962160440045406, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+  m_PrefabInstance: {fileID: 6371469010840006109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &760796427
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,6 +2725,11 @@ Transform:
   - {fileID: 312108628}
   m_Father: {fileID: 136512641}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &905652480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4675888346052152807, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+  m_PrefabInstance: {fileID: 6371469010840006109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &969666917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4420,6 +4487,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1560472129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7545090146197665406, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+  m_PrefabInstance: {fileID: 6371469010840006109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1636846351
 GameObject:
   m_ObjectHideFlags: 0
@@ -5688,6 +5760,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8866974834891809243, guid: 331364b21c78e9d458443573a5daa816, type: 3}
   m_PrefabInstance: {fileID: 6371469010840006109}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1934937888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905652480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f486a56b8c358894a92574ea9752c50a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Regular_Dialog
+  InteractPt: {fileID: 1560472129}
+  DialogLines:
+  - Awes
+  - hope you enjoy your time
+  - hope you enjoy your time
+  TextMeshPro: {fileID: 743999786}
+  Canvas: {fileID: 350720793}
+  NumberOfDialog: 0
+  CurrentNumberOfDialog: 0
+  InConvo: 0
+  PlayerController: {fileID: 387549778}
 --- !u!1 &1997844214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6608,7 +6703,10 @@ PrefabInstance:
     - {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4675888346052152807, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1934937888}
   m_SourcePrefab: {fileID: 100100000, guid: 331364b21c78e9d458443573a5daa816, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -6620,3 +6718,4 @@ SceneRoots:
   - {fileID: 720313162572983810}
   - {fileID: 1185931129}
   - {fileID: 455808547456419677}
+  - {fileID: 734999444}
