@@ -6527,6 +6527,10 @@ PrefabInstance:
       value: -8.92
       objectReference: {fileID: 0}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 734999445}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
       objectReference: {fileID: 2125031231}
