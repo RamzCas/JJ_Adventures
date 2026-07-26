@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 232110459}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -455,6 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5ff8356e5dee344ac48c445b401a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetMarble
+  isOutOfBounds: 0
 --- !u!1 &665581914
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5ff8356e5dee344ac48c445b401a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetMarble
+  isOutOfBounds: 0
 --- !u!1 &1045855174
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5ff8356e5dee344ac48c445b401a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetMarble
+  isOutOfBounds: 0
 --- !u!1 &1272877033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5ff8356e5dee344ac48c445b401a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetMarble
+  isOutOfBounds: 0
 --- !u!1 &1791797187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,6 +1448,7 @@ MonoBehaviour:
   maxDrag: 3
   minDrag: 0.5
   shooterMarble: {fileID: 1404256636674541028, guid: 1bd03c1ac6790d943872e0d08c3f7ae0, type: 3}
+  gameManager: {fileID: 2066718812}
 --- !u!1 &1819519582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5ff8356e5dee344ac48c445b401a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetMarble
+  isOutOfBounds: 0
 --- !u!1 &1880700246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,6 +1823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5ff8356e5dee344ac48c445b401a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetMarble
+  isOutOfBounds: 0
 --- !u!1 &1957832680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,6 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5ff8356e5dee344ac48c445b401a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetMarble
+  isOutOfBounds: 0
 --- !u!1 &2066718810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2038,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5d631a67e347743a9ba9935fcb4b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MarbleGameManager
+  marbleContainer: {fileID: 103013151}
+  marbleManager: {fileID: 1791797189}
+  currentTurn: 0
+  playerScore: 0
+  aiScore: 0
 --- !u!1 &2098471663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,6 +2212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5ff8356e5dee344ac48c445b401a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetMarble
+  isOutOfBounds: 0
 --- !u!1001 &6262997564302698577
 PrefabInstance:
   m_ObjectHideFlags: 0

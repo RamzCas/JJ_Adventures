@@ -20,6 +20,8 @@ public class MarbleManager : MonoBehaviour
     [Header("Misc references")]
     [SerializeField]
     private GameObject shooterMarble;
+    [SerializeField] 
+    private MarbleGameManager gameManager;
     private Vector3 dragStartWorldPos;
     private GameObject activeShooter;
     private void OnEnable()
@@ -74,6 +76,8 @@ public class MarbleManager : MonoBehaviour
         {
             rb.linearVelocity = velocity;
         }
+
+        gameManager.OnShotFired(activeShooter);
     }
     
 }
