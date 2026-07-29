@@ -5188,6 +5188,8 @@ MonoBehaviour:
   oppText: {fileID: 905991183}
   isAnchored: 0
   lastShooterPosition: {x: 0, y: 0, z: 0}
+  playerTurnPanel: {fileID: 1798903874}
+  oppTurnPanel: {fileID: 385784953}
 --- !u!1 &2098471663
 GameObject:
   m_ObjectHideFlags: 0
