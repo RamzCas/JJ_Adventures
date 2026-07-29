@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public enum TurnState
@@ -24,8 +25,23 @@ public class MarbleGameManager : MonoBehaviour
     public int playerScore = 0;
     public int aiScore = 0;
 
+    [Header("UI Text")]
+    [SerializeField]
+    private TextMeshProUGUI playerText;
+    [SerializeField]
+    private TextMeshProUGUI oppText;
+
+    [Header("Shooting Rule")]
+    public bool isAnchored = false;
+    public Vector3 lastShooterPosition;
+
     private List<TargetMarble> targetMarbles = new List<TargetMarble>();
     private GameObject currentShooterMarble;
+    [SerializeField]
+    private GameObject playerTurnPanel;
+    [SerializeField]
+    private GameObject oppTurnPanel;
+
 
     private void Awake()
     {
@@ -59,6 +75,8 @@ public class MarbleGameManager : MonoBehaviour
             yield return null;
         }
 
+        yield return new WaitForSeconds(0.75f);
+
         // 3. Evaluate results
         int marblesKnockedOutThisTurn = 0;
         bool shooterIsOutOfBounds = IsShooterOutOfBounds();
@@ -75,22 +93,20 @@ public class MarbleGameManager : MonoBehaviour
             }
         }
 
-        // Always clean up the shooter at the end of physics
-        /*if (currentShooterMarble != null)
-        {
-            Destroy(currentShooterMarble);
-        }*/
-
-        // 4. Award Score ONLY if the shot was valid (Shooter stayed inside)
+        // 4. Award Score if the shot was valid 
         if (!shooterIsOutOfBounds && marblesKnockedOutThisTurn > 0)
         {
             if (previousTurn == TurnState.PlayerTurn)
             {
                 playerScore += marblesKnockedOutThisTurn;
+                playerText.text = $"Player Score: {playerScore}";
+
+               
             }
             else
             {
                 aiScore += marblesKnockedOutThisTurn;
+                oppText.text = $"Opponent Score: {aiScore}";
             }
             Debug.Log($"Valid Shot! Player Score: {playerScore} | AI Score: {aiScore}");
         }
@@ -112,10 +128,20 @@ public class MarbleGameManager : MonoBehaviour
 
         if (keepsTurn)
         {
+            isAnchored = true;
+            if (currentShooterMarble != null)
+            {
+                lastShooterPosition = currentShooterMarble.transform.position;
+            }
             StartTurn(previousTurn); // Repeat turn for same player
         }
         else
         {
+            if (currentShooterMarble != null)
+            {
+                Destroy(currentShooterMarble);
+            }
+            isAnchored = false;
             // Pass turn to opponent
             TurnState nextTurn = (previousTurn == TurnState.PlayerTurn) ? TurnState.AITurn : TurnState.PlayerTurn;
             StartTurn(nextTurn);
@@ -128,6 +154,9 @@ public class MarbleGameManager : MonoBehaviour
     {
         previousTurn = turn;
         currentTurn = turn;
+
+        playerTurnPanel.SetActive(turn == TurnState.PlayerTurn);
+        oppTurnPanel.SetActive(turn == TurnState.AITurn);
 
         if (turn == TurnState.PlayerTurn)
         {

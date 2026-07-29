@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class MarbleManager : MonoBehaviour
 {
+    
+    
     [Header("Input Actions")]
     [SerializeField]
     private InputActionReference shootAction;
@@ -24,6 +26,19 @@ public class MarbleManager : MonoBehaviour
     private MarbleGameManager gameManager;
     private Vector3 dragStartWorldPos;
     private GameObject activeShooter;
+
+    [Header("Shooting rule")]
+    [SerializeField]
+    private CircleCollider2D ringCollider;
+    private float boundaryRadius;
+    [SerializeField] 
+    private float anchorTouchRadius = 1.2f;
+    private bool isValidDragStart;
+
+    private void Start()
+    {
+        boundaryRadius = ringCollider.radius * ringCollider.transform.localScale.x;
+    }
     private void OnEnable()
     {
         shootAction.action.started += OnPressStart;
@@ -42,14 +57,47 @@ public class MarbleManager : MonoBehaviour
 
     private void OnPressStart(InputAction.CallbackContext ctx)
     {
+        if (gameManager != null && gameManager.currentTurn == TurnState.EvaluatingPhysics) return;
         Vector2 screenPos = pointAction.action.ReadValue<Vector2>();
 
         dragStartWorldPos = Camera.main.ScreenToWorldPoint(screenPos);
         dragStartWorldPos.z = 0f;
+
+        if (gameManager != null && gameManager.isAnchored)
+        {
+            // MUST drag from near the existing shooter marble
+            float distanceToMarble = Vector3.Distance(dragStartWorldPos, gameManager.lastShooterPosition);
+            if (distanceToMarble <= anchorTouchRadius)
+            {
+                isValidDragStart = true;
+            }
+            else
+            {
+                Debug.Log("Invalid start! Drag from your existing marble to shoot again.");
+                isValidDragStart = false;
+            }
+        }
+        else
+        {
+            // MUST drag from OUTSIDE the boundary ring
+            float distanceFromCenter = dragStartWorldPos.magnitude;
+            if (distanceFromCenter > boundaryRadius)
+            {
+                isValidDragStart = true;
+            }
+            else
+            {
+                Debug.Log("Invalid start! First shot must start outside the ring.");
+                isValidDragStart = false;
+            }
+        }
     }
 
     private void OnPressRelease(InputAction.CallbackContext ctx)
     {
+        if (!isValidDragStart) return;
+        isValidDragStart = false;
+
         Vector2 screenPos = pointAction.action.ReadValue<Vector2>();
         Vector3 dragEndWorldPos = Camera.main.ScreenToWorldPoint(screenPos);
         dragEndWorldPos.z = 0f;
