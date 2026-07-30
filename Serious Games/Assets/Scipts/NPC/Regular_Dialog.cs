@@ -9,14 +9,18 @@ public class Regular_Dialog : MonoBehaviour
     //public GameObject[] DialogBoards;//Some reasone we need to add an etra point to work 
     public string[] DialogLines;
 
+    public string[] playerDialog;
+
     public TextMeshProUGUI TextMeshPro;
     public GameObject Canvas;
 
-
+    public TextMeshProUGUI playerTextMeshPro;
+    public GameObject playerCanvas;
 
     [Header("Array")]
     public int NumberOfDialog;
     public int CurrentNumberOfDialog;
+    public int playerNumberOfDialog;
 
     [Header("Bools")]
     public bool InConvo;
@@ -32,6 +36,7 @@ public class Regular_Dialog : MonoBehaviour
         Controls = new PlayerControler();
 
         NumberOfDialog = DialogLines.Length;
+        //playerNumberOfDialog -= 1;
     }
 
     private void OnEnable()
@@ -71,46 +76,49 @@ public class Regular_Dialog : MonoBehaviour
     {
         if (!InteractPt.activeSelf)
         {
-            //Debug.Log("Interated with ncp: Start dilog");
             InConvo = true;
-
         }
 
-
-        //chaning the dialog system 
         if (InConvo)
         {
-            /*DialogBoards[CurrentNumberOfDialog].gameObject.SetActive(true);
-            PlayerController.CanMove = false;
-            Canvas.SetActive(true);*/
-
             Canvas.SetActive(true);
             PlayerController.CanMove = false;
 
-           
             TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
-            
 
+            // Player response lags one index behind the NPC line
+            playerNumberOfDialog = CurrentNumberOfDialog - 1;
 
+            if (playerNumberOfDialog >= 0 && playerNumberOfDialog < playerDialog.Length)
+            {
+                playerCanvas.SetActive(true);
+                playerTextMeshPro.text = playerDialog[playerNumberOfDialog];
+            }
+            else
+            {
+                // no player line yet (first NPC line has no response before it)
+                playerCanvas.SetActive(false);
+            }
         }
 
         if (!InConvo)
         {
             PlayerController.CanMove = true;
             Canvas.SetActive(false);
+            playerCanvas.SetActive(false);
             CurrentNumberOfDialog = 0;
         }
 
-
-        if (CurrentNumberOfDialog >= NumberOfDialog - 1f)
+        if (playerNumberOfDialog >= NumberOfDialog - 1f)
         {
-
-            //Debug.Log("EndConvo");
             InteractPt.SetActive(true);
             InConvo = false;
         }
 
-
+        if (CurrentNumberOfDialog >= NumberOfDialog - 1f)
+        {
+            //Canvas.SetActive(false);
+        }
     }
 
 
@@ -123,6 +131,8 @@ public class Regular_Dialog : MonoBehaviour
             {
                 Debug.Log("Convo Progress");
                 CurrentNumberOfDialog++;
+                playerNumberOfDialog ++;
+               
             }
         }
 
