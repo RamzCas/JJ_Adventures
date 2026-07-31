@@ -75,7 +75,7 @@ public class Trigger_Dialog_Components : MonoBehaviour
         {
 
             Canvas.SetActive(true);
-            PlayerController.CanMove = false;
+            //PlayerController.CanMove = false;
             PlayerController.CurrentSpeed = 0;
             TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
         }

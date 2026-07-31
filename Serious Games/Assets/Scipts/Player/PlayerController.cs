@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         Controls = new PlayerControler();
         rb = GetComponent<Rigidbody2D>();
         CurrentSpeed = Speed;
-        CanSprint = true;
+        //CanSprint = true;
         CanMove = true;
         //CanInteract = true;
     }
@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
 
           
         }
-
+      
        
 
         Ray();

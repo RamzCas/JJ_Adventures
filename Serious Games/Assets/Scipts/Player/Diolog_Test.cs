@@ -81,12 +81,22 @@ public class Diolog_Test : MonoBehaviour
 
     private void Update()
     {
-        if (QuestManager.startQuest) 
+        if (QuestManager.startQuest && enderOfQuest) 
         {
             NumberOfDialog = questDialog.Length;
         }
 
-        if(!QuestManager.startQuest)
+        if (!QuestManager.startQuest && enderOfQuest)
+        {
+            NumberOfDialog = DialogLines.Length;
+        }
+
+        if (QuestManager.startQuest && giverOfQuest) 
+        {
+            NumberOfDialog = questDialog.Length;
+        }
+
+        if (!QuestManager.startQuest && giverOfQuest)
         {
             NumberOfDialog = DialogLines.Length;
         }
@@ -123,19 +133,47 @@ public class Diolog_Test : MonoBehaviour
             Canvas.SetActive(true);*/
 
             Canvas.SetActive(true);
-            PlayerController.CanMove = false; 
+            PlayerController.CanMove = false;
 
-            if(QuestManager.startQuest && QuestNPC) 
+            /*if(QuestManager.startQuest && QuestNPC) 
             {
                 TextMeshPro.text = questDialog[CurrentNumberOfDialog];
             }
 
-            else 
+            
+            if(QuestManager.startQuest && giverOfQuest) 
+            {
+                TextMeshPro.text += questDialog[CurrentNumberOfDialog];
+            }
+
+            else
+            {
+                TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
+            }*/
+
+            if (QuestManager.startQuest && enderOfQuest)
+            {
+                //NumberOfDialog = questDialog.Length;
+                TextMeshPro.text = questDialog[CurrentNumberOfDialog];
+            }
+
+            if(!QuestManager.startQuest && enderOfQuest) 
             {
                 TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
             }
-            
-       
+
+            if (QuestManager.startQuest && giverOfQuest)
+            {
+                //NumberOfDialog = questDialog.Length;
+                TextMeshPro.text = questDialog[CurrentNumberOfDialog];
+            }
+
+            if (!QuestManager.startQuest && giverOfQuest)
+            {
+                //NumberOfDialog = DialogLines.Length;
+                TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
+            }
+
         }
 
         if (!InConvo) 
@@ -143,6 +181,7 @@ public class Diolog_Test : MonoBehaviour
             PlayerController.CanMove = true;
             Canvas.SetActive(false);
             CurrentNumberOfDialog = 0;
+            //NumberOfDialog = DialogLines.Length;
         }
 
 
