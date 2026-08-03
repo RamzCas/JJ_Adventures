@@ -19,6 +19,8 @@ public class MarbleGameManager : MonoBehaviour
     [SerializeField] 
     private MarbleManager marbleManager;
     private TurnState previousTurn = TurnState.PlayerTurn;
+    [SerializeField] 
+    private MarbleAIController aiController;
 
     [Header("Game State")]
     public TurnState currentTurn = TurnState.PlayerTurn;
@@ -30,6 +32,10 @@ public class MarbleGameManager : MonoBehaviour
     private TextMeshProUGUI playerText;
     [SerializeField]
     private TextMeshProUGUI oppText;
+    [SerializeField] 
+    private GameObject winPanel;
+    [SerializeField] 
+    private GameObject losePanel;
 
     [Header("Shooting Rule")]
     public bool isAnchored = false;
@@ -41,6 +47,7 @@ public class MarbleGameManager : MonoBehaviour
     private GameObject playerTurnPanel;
     [SerializeField]
     private GameObject oppTurnPanel;
+    public bool isGameOver = false;
 
 
     private void Awake()
@@ -54,6 +61,8 @@ public class MarbleGameManager : MonoBehaviour
     private void Start()
     {
         StartTurn(TurnState.PlayerTurn);
+        winPanel.SetActive(false);
+        losePanel.SetActive(false);
     }
 
     public void OnShotFired(GameObject shooterInstance)
@@ -66,6 +75,9 @@ public class MarbleGameManager : MonoBehaviour
     {
         currentTurn = TurnState.EvaluatingPhysics;
 
+        playerTurnPanel.SetActive(false);
+        oppTurnPanel.SetActive(false);
+
         // 1. Small buffer delay to allow rigidbodies to register initial launch force
         yield return new WaitForSeconds(0.2f);
 
@@ -75,8 +87,13 @@ public class MarbleGameManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(1.25f);
 
+        if (CheckGameOver())
+        {
+            // Stop turn cycling since the game has ended!
+            yield break;
+        }
         // 3. Evaluate results
         int marblesKnockedOutThisTurn = 0;
         bool shooterIsOutOfBounds = IsShooterOutOfBounds();
@@ -161,12 +178,11 @@ public class MarbleGameManager : MonoBehaviour
         if (turn == TurnState.PlayerTurn)
         {
             Debug.Log("--- PLAYER TURN ---");
-            // Enable player input here
         }
         else if (turn == TurnState.AITurn)
         {
             Debug.Log("--- AI TURN ---");
-            // Trigger AI Shooting logic here
+            aiController.ExecuteAITurn();
         }
     }
 
@@ -208,6 +224,55 @@ public class MarbleGameManager : MonoBehaviour
     {
         currentTurn = TurnState.GameOver;
         Debug.Log($"Game Over! Final Score -> Player: {playerScore} | AI: {aiScore}");
+    }
+
+    public void ClearCurrentShooter()
+    {
+        if (currentShooterMarble != null)
+        {
+            Destroy(currentShooterMarble);
+            currentShooterMarble = null;
+        }
+    }
+
+    private bool CheckGameOver()
+    {
+        // Find remaining active target marbles
+        TargetMarble[] activeTargets = FindObjectsByType<TargetMarble>(FindObjectsSortMode.None);
+
+        int remainingInRing = 0;
+        foreach (var target in activeTargets)
+        {
+            // Only count target marbles that are valid and still inside the boundary
+            if (target != null && !target.isOutOfBounds)
+            {
+                remainingInRing++;
+            }
+        }
+
+        // Game ends when no target marbles remain in the ring
+        if (remainingInRing == 0)
+        {
+            isGameOver = true;
+
+            if (playerScore > aiScore)
+            {
+                Debug.Log("GAME OVER: PLAYER WINS!");
+                if (winPanel != null) winPanel.SetActive(true);
+            }
+            else
+            {
+                Debug.Log("GAME OVER: AI WINS!");
+                if (losePanel != null) losePanel.SetActive(true);
+            }
+
+            if (playerTurnPanel != null) playerTurnPanel.SetActive(false);
+            if (oppTurnPanel != null) oppTurnPanel.SetActive(false);
+
+            return true;
+        }
+
+        return false;
     }
 
 }

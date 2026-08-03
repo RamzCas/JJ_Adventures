@@ -57,6 +57,11 @@ public class MarbleManager : MonoBehaviour
 
     private void OnPressStart(InputAction.CallbackContext ctx)
     {
+        if (gameManager.currentTurn != TurnState.PlayerTurn || gameManager.isGameOver)
+        {
+            return;
+        }
+
         if (gameManager != null && gameManager.currentTurn == TurnState.EvaluatingPhysics) return;
         Vector2 screenPos = pointAction.action.ReadValue<Vector2>();
 
