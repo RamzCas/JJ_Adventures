@@ -17,6 +17,8 @@ public class QuestManager : MonoBehaviour
 
     [Header("Map")]
     public GameObject icon;
+    public GameObject onMapQuest;
+    public GameObject lineThroughQuest;
 
 
     private void Update()
@@ -25,6 +27,7 @@ public class QuestManager : MonoBehaviour
         if (startQuest) 
         {
             icon.SetActive(true);
+            onMapQuest.SetActive(true);
         }
 
         if(!startQuest) 
@@ -37,6 +40,7 @@ public class QuestManager : MonoBehaviour
             BadgeHolder[badgeNumber].sprite = Stamps[StampsCount];
             giverOfQuestGameObject.SetActive(false);
             gameManager.currentStamps += 1;
+            lineThroughQuest.SetActive(true);
             stopQuest = false;
         }
     }

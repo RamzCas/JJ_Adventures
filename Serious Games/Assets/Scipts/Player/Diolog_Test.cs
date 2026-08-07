@@ -13,7 +13,7 @@ public class Diolog_Test : MonoBehaviour
   
     public TextMeshProUGUI TextMeshPro;
     public GameObject Canvas;
-
+  
    
 
     [Header("Array")]
@@ -106,7 +106,6 @@ public class Diolog_Test : MonoBehaviour
         {
             QuestManager.startQuest = false;
             QuestManager.stopQuest = true;
-
             InteractPt.SetActive(true);
             InConvo = false;
         }
@@ -197,7 +196,8 @@ public class Diolog_Test : MonoBehaviour
         if (CurrentNumberOfDialog >= NumberOfDialog - 1f && giverOfQuest)
         {
             QuestManager.startQuest = true;
-            //Debug.Log("Start Quest");
+
+            Debug.Log("Start Quest");
         }
 
         /*if (CurrentNumberOfDialog >= NumberOfDialog - 1f && enderOfQuest && QuestManager.startQuest)
