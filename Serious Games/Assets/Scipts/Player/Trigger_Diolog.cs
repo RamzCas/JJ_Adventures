@@ -8,6 +8,8 @@ public class Trigger_Diolog : MonoBehaviour
     public GameObject player;
     //private BoxCollider2D BoxCollider2D;
     public Diolog_Test Diolog_Test;
+    public Diolog_Test completerDiologQuest;
+    public GameObject completerGameObject;
 
 
     /*public string[] DialogLines;
@@ -95,93 +97,101 @@ public class Trigger_Diolog : MonoBehaviour
         }
     }
 
-   /* private void Update()
+    private void Update()
     {
-        if (QuestManager.startQuest && enderOfQuest)
+        if (completerDiologQuest.CurrentNumberOfDialog >= completerDiologQuest.NumberOfDialog - 1f)
         {
-            NumberOfDialog = questDialog.Length;
-        }
-
-        if (!QuestManager.startQuest && enderOfQuest)
-        {
-            NumberOfDialog = DialogLines.Length;
-        }
-
-        if (QuestManager.startQuest && giverOfQuest)
-        {
-            NumberOfDialog = questDialog.Length;
-        }
-
-        if (!QuestManager.startQuest && giverOfQuest)
-        {
-            NumberOfDialog = DialogLines.Length;
-        }
-
-
-        if (CurrentNumberOfDialog >= NumberOfDialog - 1f && enderOfQuest && QuestManager.startQuest)
-        {
-            QuestManager.startQuest = false;
-            QuestManager.stopQuest = true;
-            InConvo = false;
+            completerGameObject.SetActive(false);
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (InConvo)
-        {
+    /* private void Update()
+     {
+         if (QuestManager.startQuest && enderOfQuest)
+         {
+             NumberOfDialog = questDialog.Length;
+         }
 
-            Canvas.SetActive(true);
-            PlayerController.CanMove = false;
+         if (!QuestManager.startQuest && enderOfQuest)
+         {
+             NumberOfDialog = DialogLines.Length;
+         }
 
-            if (QuestManager.startQuest && enderOfQuest)
-            {
-                //NumberOfDialog = questDialog.Length;
-                TextMeshPro.text = questDialog[CurrentNumberOfDialog];
-            }
+         if (QuestManager.startQuest && giverOfQuest)
+         {
+             NumberOfDialog = questDialog.Length;
+         }
 
-            if (!QuestManager.startQuest && enderOfQuest)
-            {
-                TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
-            }
-
-            if (QuestManager.startQuest && giverOfQuest)
-            {
-                //NumberOfDialog = questDialog.Length;
-                TextMeshPro.text = questDialog[CurrentNumberOfDialog];
-            }
-
-            if (!QuestManager.startQuest && giverOfQuest)
-            {
-                //NumberOfDialog = DialogLines.Length;
-                TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
-            }
-
-        }
-
-        if (!InConvo)
-        {
-            PlayerController.CanMove = true;
-            Canvas.SetActive(false);
-            CurrentNumberOfDialog = 0;
-        }
+         if (!QuestManager.startQuest && giverOfQuest)
+         {
+             NumberOfDialog = DialogLines.Length;
+         }
 
 
-        if (CurrentNumberOfDialog >= NumberOfDialog - 1f)
-        {
-            InConvo = false;
-        }
+         if (CurrentNumberOfDialog >= NumberOfDialog - 1f && enderOfQuest && QuestManager.startQuest)
+         {
+             QuestManager.startQuest = false;
+             QuestManager.stopQuest = true;
+             InConvo = false;
+         }
+     }
+
+     private void FixedUpdate()
+     {
+         if (InConvo)
+         {
+
+             Canvas.SetActive(true);
+             PlayerController.CanMove = false;
+
+             if (QuestManager.startQuest && enderOfQuest)
+             {
+                 //NumberOfDialog = questDialog.Length;
+                 TextMeshPro.text = questDialog[CurrentNumberOfDialog];
+             }
+
+             if (!QuestManager.startQuest && enderOfQuest)
+             {
+                 TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
+             }
+
+             if (QuestManager.startQuest && giverOfQuest)
+             {
+                 //NumberOfDialog = questDialog.Length;
+                 TextMeshPro.text = questDialog[CurrentNumberOfDialog];
+             }
+
+             if (!QuestManager.startQuest && giverOfQuest)
+             {
+                 //NumberOfDialog = DialogLines.Length;
+                 TextMeshPro.text = DialogLines[CurrentNumberOfDialog];
+             }
+
+         }
+
+         if (!InConvo)
+         {
+             PlayerController.CanMove = true;
+             Canvas.SetActive(false);
+             CurrentNumberOfDialog = 0;
+         }
 
 
-        if (CurrentNumberOfDialog >= NumberOfDialog - 1f && giverOfQuest)
-        {
-            QuestManager.startQuest = true;
-
-            Debug.Log("Start Quest");
-        }
+         if (CurrentNumberOfDialog >= NumberOfDialog - 1f)
+         {
+             InConvo = false;
+         }
 
 
-    }
+         if (CurrentNumberOfDialog >= NumberOfDialog - 1f && giverOfQuest)
+         {
+             QuestManager.startQuest = true;
+
+             Debug.Log("Start Quest");
+         }
+
+
+     }
 
 
 
@@ -192,16 +202,16 @@ public class Trigger_Diolog : MonoBehaviour
 
 
 
-    public void DialogControls(InputAction.CallbackContext context)
-    {
-        if (InConvo)
-        {
-            if (context.performed)
-            {
-                //Debug.Log("Convo Progress");
-                CurrentNumberOfDialog++;
-            }
-        }
+     public void DialogControls(InputAction.CallbackContext context)
+     {
+         if (InConvo)
+         {
+             if (context.performed)
+             {
+                 //Debug.Log("Convo Progress");
+                 CurrentNumberOfDialog++;
+             }
+         }
 
-    }*/
+     }*/
 }
