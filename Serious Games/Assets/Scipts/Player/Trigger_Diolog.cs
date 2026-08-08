@@ -6,10 +6,11 @@ public class Trigger_Diolog : MonoBehaviour
 {
     public string playerTag;
     public GameObject player;
-    private BoxCollider2D BoxCollider2D;
+    //private BoxCollider2D BoxCollider2D;
+    public Diolog_Test Diolog_Test;
 
 
-    public string[] DialogLines;
+    /*public string[] DialogLines;
 
     public TextMeshProUGUI characterNameCanvas;
     public string characterName;
@@ -29,8 +30,8 @@ public class Trigger_Diolog : MonoBehaviour
     [Header("Other Scripts")]
     public PlayerController PlayerController;
     public QuestManager QuestManager;
-    /*public Start_Fetch_Qeust Start_Fetch_Quest;
-    public FInished_Fetch_Quest Finished_Fetch_Quest;*/
+    *//*public Start_Fetch_Qeust Start_Fetch_Quest;
+    public FInished_Fetch_Quest Finished_Fetch_Quest;*//*
 
     [Header("Quest Settings")]
     public bool giverOfQuest;
@@ -78,7 +79,7 @@ public class Trigger_Diolog : MonoBehaviour
     {
         Controls.Player.Dialog.performed -= DialogControls;
         Controls.Disable();
-    }
+    } */
 
 
 
@@ -88,12 +89,13 @@ public class Trigger_Diolog : MonoBehaviour
         {
             //Trigger_Dialog_Components.InConvo = true;
             //this.gameObject.SetActive(false);
-            BoxCollider2D.enabled = false;
-            InConvo = true;
+            //BoxCollider2D.enabled = false;
+            Diolog_Test.InConvo = true;
+            this.gameObject.SetActive(false);
         }
     }
 
-    private void Update()
+   /* private void Update()
     {
         if (QuestManager.startQuest && enderOfQuest)
         {
@@ -201,5 +203,5 @@ public class Trigger_Diolog : MonoBehaviour
             }
         }
 
-    }
+    }*/
 }
