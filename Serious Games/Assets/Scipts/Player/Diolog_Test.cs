@@ -10,6 +10,9 @@ public class Diolog_Test : MonoBehaviour
     public GameObject InteractPt;
     //public GameObject[] DialogBoards;//Some reasone we need to add an etra point to work 
     public string[] DialogLines;
+
+    public TextMeshProUGUI characterNameCanvas;
+    public string characterName;
   
     public TextMeshProUGUI TextMeshPro;
     public GameObject Canvas;
@@ -40,6 +43,7 @@ public class Diolog_Test : MonoBehaviour
 
     private void Awake()
     {
+        characterNameCanvas.text = characterName;
         Controls = new PlayerControler();
         //NumberOfDialog = DialogBoards.Length;
         //NumberOfDialog = DialogLines.Length;
