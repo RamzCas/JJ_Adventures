@@ -21,7 +21,6 @@ public class MarbleGameManager : MonoBehaviour
     private TurnState previousTurn = TurnState.PlayerTurn;
     [SerializeField] 
     private MarbleAIController aiController;
-    private SceneLoader sceneLoader;
 
     [Header("Game State")]
     public TurnState currentTurn = TurnState.PlayerTurn;
@@ -64,7 +63,6 @@ public class MarbleGameManager : MonoBehaviour
         StartTurn(TurnState.PlayerTurn);
         winPanel.SetActive(false);
         losePanel.SetActive(false);
-        sceneLoader = FindAnyObjectByType<SceneLoader>();
     }
 
     public void OnShotFired(GameObject shooterInstance)
@@ -259,12 +257,12 @@ public class MarbleGameManager : MonoBehaviour
 
             if (playerScore > aiScore)
             {
+                Debug.Log("GAME OVER: PLAYER WINS!");
                 if (winPanel != null) winPanel.SetActive(true);
-                StartCoroutine(FinishGame());
             }
             else
             {
-                StartCoroutine(RestartGame());
+                Debug.Log("GAME OVER: AI WINS!");
                 if (losePanel != null) losePanel.SetActive(true);
             }
 
@@ -275,19 +273,6 @@ public class MarbleGameManager : MonoBehaviour
         }
 
         return false;
-    }
-
-    private IEnumerator RestartGame()
-    {
-        Debug.Log("Switch scenes please");
-        yield return new WaitForSecondsRealtime(3);
-        sceneLoader.ReloadScene();
-    }
-
-    private IEnumerator FinishGame()
-    {
-        yield return new WaitForSeconds(3);
-        sceneLoader.SwitchScene("GameEnd");
     }
 
 }
