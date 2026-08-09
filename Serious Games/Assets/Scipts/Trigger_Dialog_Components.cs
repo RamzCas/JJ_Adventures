@@ -60,9 +60,7 @@ public class Trigger_Dialog_Components : MonoBehaviour
  
         if (CurrentNumberOfDialog >= NumberOfDialog - 1f)
         {
-        
             InConvo = false;
-            this.gameObject.SetActive(false);
         }
     }
 
@@ -87,6 +85,7 @@ public class Trigger_Dialog_Components : MonoBehaviour
             PlayerController.CurrentSpeed = PlayerController.Speed;
             Canvas.SetActive(false);
             CurrentNumberOfDialog = 0;
+            this.gameObject.SetActive(false);
         }
 
 
