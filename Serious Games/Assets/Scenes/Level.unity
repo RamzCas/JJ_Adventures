@@ -509,6 +509,22 @@ Transform:
   - {fileID: 1130077415}
   m_Father: {fileID: 1754689714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &151030376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 350045250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &151030379 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 350045250}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151030376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
 --- !u!114 &151497177 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 89423041827458224, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
@@ -1347,6 +1363,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 181638996329774435, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
   m_PrefabInstance: {fileID: 261395625}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &301574807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 411359361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &301574810 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 411359361}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301574807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
 --- !u!114 &302263707 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7329711283324398587, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
@@ -2414,9 +2446,33 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 421100238147765558, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 423.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 421100238147765558, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 181.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 421100238147765558, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 421100238147765558, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.001009
+      objectReference: {fileID: 0}
     - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SortingOrder
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329348139790300590, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_fontSize
+      value: 29.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329348139790300590, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 29.61
       objectReference: {fileID: 0}
     - target: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
@@ -2428,7 +2484,7 @@ PrefabInstance:
       objectReference: {fileID: 1104841684}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: startQuest
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: gameManager
@@ -2474,6 +2530,22 @@ PrefabInstance:
       propertyPath: 'BadgeHolder.Array.data[8]'
       value: 
       objectReference: {fileID: 1415512074}
+    - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 423.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 181.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 188.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -134.11
+      objectReference: {fileID: 0}
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.3
@@ -2507,12 +2579,101 @@ PrefabInstance:
       value: Quest  (Starter)
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: QuestNPC
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: characterName
+      value: Thando
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 1327952381}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: questDialog.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[0]'
+      value: Howzit. You're the one Jozi My Jozi sent through?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[1]'
+      value: Cool, cool.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[2]'
+      value: So here's the thing, this park runs on people helping people
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[3]'
+      value: that's kind of the whole point
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[4]'
+      value: You don't need an assignment, just walk around
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[5]'
+      value: alk to whoever's about, and you'll pick up what this place actually
+        is
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[6]'
+      value: ' If you want somewhere to start, Sizwe''s up at the mural wall'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[7]'
+      value: he's been complaining about running out of paint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[8]'
+      value: Mr Patel's in the garden
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[9]'
+      value: always needs a hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[10]'
+      value: Rest of them you'll just bump into
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493947311726781617, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6140137210826790554, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6244233470795091541, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6244233470795091541, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444729764522810375, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 136.7727
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444729764522810375, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.2685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444729764522810375, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444729764522810375, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 111.2
       objectReference: {fileID: 0}
     - target: {fileID: 7693838543345951040, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2562,10 +2723,58 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7868769963594188511, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.097476445
+      objectReference: {fileID: 0}
+    - target: {fileID: 7868769963594188511, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.10771028
+      objectReference: {fileID: 0}
+    - target: {fileID: 7868769963594188511, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 165.2708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7868769963594188511, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 83.6447
+      objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 1327952381}
+    - target: {fileID: 8011175926782758314, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 136.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8011175926782758314, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 39.0996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8011175926782758314, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00019073
+      objectReference: {fileID: 0}
+    - target: {fileID: 8011175926782758314, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.0847
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117135246004425104, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 108.4562
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117135246004425104, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 91.7136
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117135246004425104, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -157.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117135246004425104, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 136.74
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3125,8 +3334,8 @@ MonoBehaviour:
   playerTag: Player
   player: {fileID: 261395626}
   Diolog_Test: {fileID: 435559038}
-  completerDiologQuest: {fileID: 0}
-  completerGameObject: {fileID: 0}
+  completerDiologQuest: {fileID: 301574810}
+  completerGameObject: {fileID: 301574807}
 --- !u!1 &819926406
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,8 +6706,8 @@ MonoBehaviour:
   playerTag: Player
   player: {fileID: 261395626}
   Diolog_Test: {fileID: 350045252}
-  completerDiologQuest: {fileID: 0}
-  completerGameObject: {fileID: 0}
+  completerDiologQuest: {fileID: 151030379}
+  completerGameObject: {fileID: 151030376}
 --- !u!1 &2067710419
 GameObject:
   m_ObjectHideFlags: 0
