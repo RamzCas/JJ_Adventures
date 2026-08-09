@@ -1,16 +1,37 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Lighting : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("Global Lighting")]
+    public float minGlobalLight;
+    public float currentGlobalLight;
+    public Light2D globalLight;
+
+    [Header("Spot lights")]
+    public float maxSpotLight;
+    public float currentSpotIntencting;
+    public Light2D[] spotLight;
+    //public GameObject[] spotLightsGameobjects;
+
+
+    private void Update()
     {
-        
+        SetLightIntencity();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetLightIntencity() 
     {
-        
+        globalLight.intensity = currentGlobalLight;
+
+        foreach (Light2D light in spotLight) 
+        {
+            light.intensity = currentSpotIntencting; 
+        }
+    }
+
+    public void ManageLightIntencity() 
+    {
+    
     }
 }

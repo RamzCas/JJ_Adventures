@@ -20,6 +20,9 @@ public class QuestManager : MonoBehaviour
     public GameObject onMapQuest;
     public GameObject lineThroughQuest;
 
+    [Header("Lighting")]
+    public Lighting Lighting;
+
 
     private void Update()
     {
