@@ -304,7 +304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &83541763
 Transform:
   m_ObjectHideFlags: 0
@@ -4007,6 +4007,159 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1001 &949881796
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1468494866}
+    m_Modifications:
+    - target: {fileID: 427902658984084625, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_Name
+      value: Trigger_Converstion
+      objectReference: {fileID: 0}
+    - target: {fileID: 590202665319524392, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 23.292934
+      objectReference: {fileID: 0}
+    - target: {fileID: 590202665319524392, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7562
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.692623
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -49.916927
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788182608331224218, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: PlayerController
+      value: 
+      objectReference: {fileID: 1327952381}
+    - target: {fileID: 3788182608331224218, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: DialogLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788182608331224218, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: 'DialogLines.Array.data[0]'
+      value: If you ever get lost press tab to get your phone's menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788182608331224218, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: 'DialogLines.Array.data[1]'
+      value: this is where you can see your map
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788182608331224218, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: 'DialogLines.Array.data[2]'
+      value: and if u don't understand what people are saying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788182608331224218, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: 'DialogLines.Array.data[3]'
+      value: there is a dictionary
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982576091290827823, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033699372648940676, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 261395626}
+    - target: {fileID: 7174550498736192755, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174550498736192755, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.073584795
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174550498736192755, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.80314666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174550498736192755, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5033699372648940676, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3982576091290827823, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 949881800}
+  m_SourcePrefab: {fileID: 100100000, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+--- !u!4 &949881797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+  m_PrefabInstance: {fileID: 949881796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &949881798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3982576091290827823, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+  m_PrefabInstance: {fileID: 949881796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &949881799 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3788182608331224218, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
+  m_PrefabInstance: {fileID: 949881796}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949881798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4828c278f63f43940b2b9ac28e6521ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trigger_Dialog
+--- !u!114 &949881800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949881798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0c1b3f0e1fefb2428cbab61c6871386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trigger_Advice
+  playerTag: Player
+  Player: {fileID: 261395626}
+  Trigger_Dialog_Components: {fileID: 949881799}
 --- !u!114 &960116831 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5605071179990255775, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
@@ -5599,6 +5752,38 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1468494865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468494866}
+  m_Layer: 0
+  m_Name: Trigger_Information
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1468494866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468494865}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 949881797}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581028538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6874,3 +7059,4 @@ SceneRoots:
   - {fileID: 1754689714}
   - {fileID: 531035674}
   - {fileID: 1346654077}
+  - {fileID: 1468494866}

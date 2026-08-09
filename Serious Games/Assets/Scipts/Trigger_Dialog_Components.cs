@@ -62,6 +62,7 @@ public class Trigger_Dialog_Components : MonoBehaviour
         {
         
             InConvo = false;
+            this.gameObject.SetActive(false);
         }
     }
 
