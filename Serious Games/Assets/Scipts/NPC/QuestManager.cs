@@ -20,6 +20,9 @@ public class QuestManager : MonoBehaviour
     public GameObject onMapQuest;
     public GameObject lineThroughQuest;
 
+    [Header("Lighting")]
+    public Lighting Lighting;
+
 
     private void Update()
     {
@@ -41,6 +44,8 @@ public class QuestManager : MonoBehaviour
             giverOfQuestGameObject.SetActive(false);
             gameManager.currentStamps += 1;
             lineThroughQuest.SetActive(true);
+            //Lighting.currentGlobalLight -= 0.5f;
+            //Lighting.currentSpotIntencting += 1.5f;
             stopQuest = false;
         }
     }
