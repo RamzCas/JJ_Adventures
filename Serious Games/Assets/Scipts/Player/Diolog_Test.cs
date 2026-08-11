@@ -137,6 +137,7 @@ public class Diolog_Test : MonoBehaviour
 
             Canvas.SetActive(true);
             PlayerController.CanMove = false;
+            PlayerController.CurrentSpeed = 0;
 
             /*if(QuestManager.startQuest && QuestNPC) 
             {
@@ -194,6 +195,7 @@ public class Diolog_Test : MonoBehaviour
             //Debug.Log("EndConvo");
             InteractPt.SetActive(true);
             InConvo = false;
+            PlayerController.CurrentSpeed = PlayerController.Speed;
         }
 
 

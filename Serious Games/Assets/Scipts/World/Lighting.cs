@@ -18,6 +18,7 @@ public class Lighting : MonoBehaviour
     private void Update()
     {
         SetLightIntencity();
+        ManageLightIntencity();
     }
 
     public void SetLightIntencity() 
@@ -32,6 +33,14 @@ public class Lighting : MonoBehaviour
 
     public void ManageLightIntencity() 
     {
-    
+        if (currentGlobalLight <= minGlobalLight) 
+        {
+            currentGlobalLight = minGlobalLight;
+        }
+
+        if(currentSpotIntencting >= maxSpotLight) 
+        {
+            currentSpotIntencting = maxSpotLight;
+        }
     }
 }

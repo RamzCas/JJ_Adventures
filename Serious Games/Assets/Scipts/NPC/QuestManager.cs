@@ -44,8 +44,8 @@ public class QuestManager : MonoBehaviour
             giverOfQuestGameObject.SetActive(false);
             gameManager.currentStamps += 1;
             lineThroughQuest.SetActive(true);
-            //Lighting.currentGlobalLight -= 0.5f;
-            //Lighting.currentSpotIntencting += 1.5f;
+            Lighting.currentGlobalLight -= 0.25f;
+            Lighting.currentSpotIntencting += 1.5f;
             stopQuest = false;
         }
     }
