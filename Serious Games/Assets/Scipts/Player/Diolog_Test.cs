@@ -111,6 +111,7 @@ public class Diolog_Test : MonoBehaviour
             QuestManager.startQuest = false;
             QuestManager.stopQuest = true;
             InteractPt.SetActive(true);
+            //PlayerController.CurrentSpeed = PlayerController.Speed;
             InConvo = false;
         }
     }
@@ -186,6 +187,7 @@ public class Diolog_Test : MonoBehaviour
             Canvas.SetActive(false);
             CurrentNumberOfDialog = 0;
             //NumberOfDialog = DialogLines.Length;
+            PlayerController.CurrentSpeed = PlayerController.Speed;
         }
 
 
@@ -195,7 +197,7 @@ public class Diolog_Test : MonoBehaviour
             //Debug.Log("EndConvo");
             InteractPt.SetActive(true);
             InConvo = false;
-            PlayerController.CurrentSpeed = PlayerController.Speed;
+            //PlayerController.CurrentSpeed = PlayerController.Speed;
         }
 
 
