@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Do_After_Convo : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Do_After_Convo : MonoBehaviour
     public enum WhatToDoAfterConvo
     {
         switch_scene,
+        exsplainSceneSwitch,
         deactivate,
         activate, 
         nothing,
@@ -20,7 +22,8 @@ public class Do_After_Convo : MonoBehaviour
 
     [Header("Other Components")]
     public GameObject otherGameObject;
-    public bool switchToMarbelScene;
+    //public bool switchToMarbelScene;
+    public string exsplainerScene;
 
     private void Update()
     {
@@ -30,6 +33,11 @@ public class Do_After_Convo : MonoBehaviour
             {
                     case WhatToDoAfterConvo.switch_scene:
                     //switch scene
+                    break;
+
+
+                    case WhatToDoAfterConvo.exsplainSceneSwitch:
+                    SceneManager.LoadScene(exsplainerScene);
                     break;
 
 

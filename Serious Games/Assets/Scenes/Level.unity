@@ -8350,7 +8350,7 @@ MonoBehaviour:
   SceneLoader: {fileID: 1264578821}
   afterConvo: 1
   otherGameObject: {fileID: 1982156854}
-  switchToMarbelScene: 0
+  exsplainerScene: 
 --- !u!1001 &648206805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16725,6 +16725,7 @@ GameObject:
   - component: {fileID: 730745182457647898}
   - component: {fileID: 4776111392904454457}
   - component: {fileID: 7781101407625054099}
+  - component: {fileID: 7781101407625054100}
   m_Layer: 0
   m_Name: NPC_Quest Completed
   m_TagString: Untagged
@@ -16852,7 +16853,13 @@ MonoBehaviour:
   giverOfQuest: 0
   QuestNPC: 1
   enderOfQuest: 1
-  questDialog: []
+  questDialog:
+  - 'awes '
+  - 'to get your final stamp '
+  - 'your gonna need to beat me at marbles '
+  - hehe, don't worry there is a video that will explain the rules
+  - here let me send it to you
+  - here let me send it to you
 --- !u!224 &4834614317647389542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17531,6 +17538,23 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7781101407625054100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4068142695446547697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
+  Diolog_Test: {fileID: 4776111392904454457}
+  SceneLoader: {fileID: 1264578821}
+  afterConvo: 1
+  otherGameObject: {fileID: 0}
+  exsplainerScene: ExsplainMarbels
 --- !u!4 &7868769963453199000
 Transform:
   m_ObjectHideFlags: 0
@@ -17566,7 +17590,7 @@ MonoBehaviour:
   - 'I hear you are almost done with your stamps '
   - 'I''m sure you have heard of the marbles tournement  '
   - 'thats where you are gonna get the final stamp '
-  - 'just vi back to the boot '
+  - 'just vi back to the booth '
   - 'I''ll meet you there '
   - 'I''ll meet you there '
   characterNameCanvas: {fileID: 2066746954395630374}
