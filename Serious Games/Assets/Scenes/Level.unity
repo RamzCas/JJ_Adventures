@@ -5900,6 +5900,10 @@ PrefabInstance:
       value: 'Quest (Mural) '
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: characterName
+      value: 'Thando '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 1327952381}
@@ -6591,6 +6595,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!1 &309800656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1260569909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &309800659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1260569909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309800656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+--- !u!114 &309800662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309800656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
+  Diolog_Test: {fileID: 309800659}
+  SceneLoader: {fileID: 0}
+  afterConvo: 3
+  otherGameObject: {fileID: 526161963}
+  exsplainerScene: 
 --- !u!1 &347690740
 GameObject:
   m_ObjectHideFlags: 0
@@ -7641,6 +7678,11 @@ PolygonCollider2D:
       - {x: 0.6738927, y: 0.057096176}
       - {x: 0.6961551, y: 0.28038085}
   m_UseDelaunayMesh: 1
+--- !u!1 &526161963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1260569909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &531035671
 GameObject:
   m_ObjectHideFlags: 0
@@ -7974,7 +8016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 421100238147765558, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 423.9
+      value: 488.32
       objectReference: {fileID: 0}
     - target: {fileID: 421100238147765558, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -7982,7 +8024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 421100238147765558, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000015259
+      value: -0.00012779
       objectReference: {fileID: 0}
     - target: {fileID: 421100238147765558, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -8062,7 +8104,7 @@ PrefabInstance:
       objectReference: {fileID: 1415512074}
     - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 423.9
+      value: 488.3172
       objectReference: {fileID: 0}
     - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -8070,7 +8112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 188.05
+      value: 155.84145
       objectReference: {fileID: 0}
     - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -8114,7 +8156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: characterName
-      value: Thando
+      value: Lindiwe
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
@@ -8348,7 +8390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
   Diolog_Test: {fileID: 636887533}
   SceneLoader: {fileID: 1264578821}
-  afterConvo: 1
+  afterConvo: 2
   otherGameObject: {fileID: 1982156854}
   exsplainerScene: 
 --- !u!1001 &648206805
@@ -8361,12 +8403,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -84
+      value: -74.6
       objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 97.2
+      value: 39.7
       objectReference: {fileID: 0}
+    - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 830164d71b9d60c40b606822b957d10b, type: 3}
     - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SortingOrder
       value: 25
@@ -8425,11 +8471,11 @@ PrefabInstance:
       objectReference: {fileID: 1415512074}
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.2
+      value: -52.9
       objectReference: {fileID: 0}
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 65
+      value: 64.3
       objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: playerCanvas
@@ -8443,14 +8489,50 @@ PrefabInstance:
       propertyPath: playerTextMeshPro
       value: 
       objectReference: {fileID: 916672389}
+    - target: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_Name
       value: 'Quest  (Leader) '
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: characterName
+      value: '*Behind the Garden*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 1327952381}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: DialogLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: questDialog.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[0]'
+      value: Mr Patel's garden
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[1]'
+      value: Mr Patel's garden
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[0]'
+      value: '*you found the hiden stamps*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[1]'
+      value: '*you found the hiden stamps*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[2]'
+      value: Enjoy!!
+      objectReference: {fileID: 0}
     - target: {fileID: 7693838543345951040, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 51.1
@@ -8500,13 +8582,72 @@ PrefabInstance:
       value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: characterName
+      value: Auntie Nomvula
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 1327952381}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: DialogLines.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: questDialog.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[0]'
+      value: Oh hello
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[1]'
+      value: Im so sorry, i was really captivated by this amazing book
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[2]'
+      value: yes you're the new volunteer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[3]'
+      value: it is so nice to see more people get involed with our program
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[4]'
+      value: 'ah, you must be searching for stamps '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[5]'
+      value: I'll tell u what
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[6]'
+      value: I left a few stamps behind Mr Patels Garden
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[7]'
+      value: I put them there as a treasure hunt game for the kids
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[8]'
+      value: I put them there as a treasure hunt game for the kids
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[0]'
+      value: I wonder if Mr Patel noticed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[1]'
+      value: I wonder if Mr Patel noticed
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1884987152}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &648206806 stripped
 Transform:
@@ -9762,6 +9903,10 @@ PrefabInstance:
     - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: characterName
+      value: Booth
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
@@ -12016,6 +12161,10 @@ PrefabInstance:
       propertyPath: playerTextMeshPro
       value: 
       objectReference: {fileID: 916672389}
+    - target: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_Name
       value: Quest  (Playground)
@@ -12139,7 +12288,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 309800662}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &1260569910 stripped
 Transform:
@@ -12773,6 +12925,10 @@ PrefabInstance:
       value: Quest  (Garden)
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: characterName
+      value: 'Lindiwe '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 1327952381}
@@ -13354,6 +13510,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1465833246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 648206805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1468494865
 GameObject:
   m_ObjectHideFlags: 0
@@ -14747,6 +14908,39 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1884987146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 648206805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884987149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 648206805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884987146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+--- !u!114 &1884987152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884987146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
+  Diolog_Test: {fileID: 1884987149}
+  SceneLoader: {fileID: 0}
+  afterConvo: 3
+  otherGameObject: {fileID: 1465833246}
+  exsplainerScene: 
 --- !u!1 &1982156854
 GameObject:
   m_ObjectHideFlags: 0
