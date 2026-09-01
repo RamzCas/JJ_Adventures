@@ -89,7 +89,12 @@ public class MarbleGameManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(2f);
+
+        while (AreMarblesStillMoving())
+        {
+            yield return null;
+        }
 
         if (CheckGameOver())
         {
