@@ -22,6 +22,8 @@ public class MarbleManager : MonoBehaviour
     [Header("Misc references")]
     [SerializeField]
     private GameObject shooterMarble;
+    [SerializeField]
+    private GameObject OppshooterMarble;
     [SerializeField] 
     private MarbleGameManager gameManager;
     [SerializeField]

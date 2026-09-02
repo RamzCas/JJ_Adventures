@@ -7,6 +7,7 @@ public class TargetMarble : MonoBehaviour
 
     private void Awake()
     {
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, Random.Range(0f, 360f));
         rb = GetComponent<Rigidbody2D>();
     }
 

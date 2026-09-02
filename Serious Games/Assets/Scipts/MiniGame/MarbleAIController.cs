@@ -10,6 +10,8 @@ public class MarbleAIController : MonoBehaviour
     private GameObject shooterMarblePrefab;
     [SerializeField] 
     private CircleCollider2D boundaryCollider;
+    [SerializeField]
+    private GameObject OppshooterMarble;
 
     [Header("AI Settings")]
     [SerializeField] 
@@ -164,7 +166,7 @@ public class MarbleAIController : MonoBehaviour
             gameManager.ClearCurrentShooter();
         }
 
-        GameObject aiShooter = Instantiate(shooterMarblePrefab, spawnPos, Quaternion.identity);
+        GameObject aiShooter = Instantiate(OppshooterMarble, spawnPos, Quaternion.identity);
 
         if (aiShooter.TryGetComponent<Rigidbody2D>(out Rigidbody2D rb))
         {
