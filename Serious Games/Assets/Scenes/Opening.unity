@@ -353,7 +353,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextCycle
   TextMeshProUGUI: {fileID: 1401066419}
-  stringCycle: []
+  stringCycle:
+  - Hope your ride from the airport wasn't too long
+  - 'welcome to Johanusburg! '
+  - 'Theank you for volenturing '
+  - 'you heading to Donald Mackay Park '
+  - I heard their is an event hapening tonight
+  - you'll meet the locals and have fun.
   continueCycling: 0
   currentLine: 0
   maxLine: 0
