@@ -89,7 +89,13 @@ public class MarbleGameManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(2f);
+        StopAllMarbles();
+
+        while (AreMarblesStillMoving())
+        {
+            yield return null;
+        }
 
         if (CheckGameOver())
         {
@@ -290,4 +296,17 @@ public class MarbleGameManager : MonoBehaviour
         sceneLoader.SwitchScene("GameEnd");
     }
 
+    private void StopAllMarbles()
+    {
+        Rigidbody2D[] allMarbles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+
+        foreach (Rigidbody2D rb in allMarbles)
+        {
+           
+            rb.linearVelocity = Vector2.zero;
+
+           
+            rb.angularVelocity = 0f;
+        }
+    }
 }

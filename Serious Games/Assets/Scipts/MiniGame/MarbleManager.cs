@@ -22,8 +22,12 @@ public class MarbleManager : MonoBehaviour
     [Header("Misc references")]
     [SerializeField]
     private GameObject shooterMarble;
+    [SerializeField]
+    private GameObject OppshooterMarble;
     [SerializeField] 
     private MarbleGameManager gameManager;
+    [SerializeField]
+    private AimIndicator aimIndicator;
     private Vector3 dragStartWorldPos;
     private GameObject activeShooter;
 
@@ -53,6 +57,44 @@ public class MarbleManager : MonoBehaviour
         shootAction.action.canceled -= OnPressRelease;
         shootAction.action.Disable();
         pointAction.action.Disable();
+    }
+
+    private void Update()
+    {
+        if (!isValidDragStart) return;
+
+        // Read current pointer position in world space
+        Vector2 screenPos = pointAction.action.ReadValue<Vector2>();
+        Vector3 currentDragWorldPos = Camera.main.ScreenToWorldPoint(screenPos);
+        currentDragWorldPos.z = 0f;
+
+        // Calculate drag vector
+        Vector3 dragVector = currentDragWorldPos - dragStartWorldPos;
+        float dragDistance = dragVector.magnitude;
+
+        if (dragDistance >= minDrag)
+        {
+            // Clamp aiming point to maxDrag radius
+            Vector3 clampedVector = Vector3.ClampMagnitude(dragVector, maxDrag);
+            Vector3 targetAimPoint = dragStartWorldPos + clampedVector;
+
+            // Calculate power ratio between 0.0 (minimum drag) and 1.0 (max drag)
+            float powerPercent = clampedVector.magnitude / maxDrag;
+
+            if (aimIndicator != null)
+            {
+                // Draw line with dynamic color gradient
+                aimIndicator.UpdateIndicator(dragStartWorldPos, targetAimPoint, powerPercent);
+            }
+        }
+        else
+        {
+            // Hide indicator if drag distance is below minDrag threshold
+            if (aimIndicator != null)
+            {
+                aimIndicator.HideIndicator();
+            }
+        }
     }
 
     private void OnPressStart(InputAction.CallbackContext ctx)
@@ -100,6 +142,7 @@ public class MarbleManager : MonoBehaviour
 
     private void OnPressRelease(InputAction.CallbackContext ctx)
     {
+        aimIndicator.HideIndicator();
         if (!isValidDragStart) return;
         isValidDragStart = false;
 
