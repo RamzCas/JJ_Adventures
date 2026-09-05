@@ -5939,6 +5939,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Quest (Mural) '
       objectReference: {fileID: 0}
+    - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerText
+      value: 
+      objectReference: {fileID: 916672389}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerCanvas
+      value: 
+      objectReference: {fileID: 543919092}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: characterName
       value: 'Thando '
@@ -5949,11 +5961,11 @@ PrefabInstance:
       objectReference: {fileID: 1327952381}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: DialogLines.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: questDialog.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[1]'
@@ -5972,40 +5984,88 @@ PrefabInstance:
       value: '*I wonder if they have gone through all the cans*'
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerQuestYap.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[0]'
       value: Hi!
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[1]'
-      value: 'oh Sizwe needs more cans '
+      value: whats's up
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[2]'
-      value: Man goes through cans faster than anyone I've ever supplied
+      value: 'oh Sizwe needs more cans '
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[3]'
-      value: I can give them to him
+      value: Man goes through cans faster than anyone I've ever supplied
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[4]'
-      value: I walking that way anyways.
+      value: I can give them to him
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[5]'
-      value: 'But hey you should swing by the tower '
+      value: I walking that way anyways.
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[6]'
-      value: 'when u have a chance '
+      value: 'But hey you should swing by the tower '
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[7]'
-      value: I'll be there now-now
+      value: 'when u have a chance '
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[8]'
-      value: 'when u have a chance '
+      value: I'll be there now-now
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerDialogYap.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[0]'
+      value: hey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[1]'
+      value: hey, Sizwe's cans are out
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[2]'
+      value: haha, yeah
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[3]'
+      value: are you sure
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[4]'
+      value: ok, cool
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[5]'
+      value: ok, cool
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[6]'
+      value: oh, yeah for sure
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[0]'
+      value: Hi
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[1]'
+      value: 'no i havent '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[2]'
+      value: what is this guy thinking
       objectReference: {fileID: 0}
     - target: {fileID: 7693838543345951040, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6056,16 +6116,24 @@ PrefabInstance:
       value: 23.53
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerText
+      value: 
+      objectReference: {fileID: 916672389}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerCanvas
+      value: 
+      objectReference: {fileID: 543919092}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 1327952381}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: DialogLines.Array.size
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: questDialog.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[0]'
@@ -6104,6 +6172,10 @@ PrefabInstance:
       value: she'll know which one
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerQuestYap.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[0]'
       value: 'Got to get this done before I loose the light '
       objectReference: {fileID: 0}
@@ -6114,6 +6186,42 @@ PrefabInstance:
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[2]'
       value: or it will be chaai
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerDialogYap.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[0]'
+      value: don't worry, I'll get them
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[0]'
+      value: what's up?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[1]'
+      value: yip, that's me
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[2]'
+      value: haha yeah
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[3]'
+      value: 'yeah sure '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[4]'
+      value: oh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[5]'
+      value: oh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[6]'
+      value: 'ok sure '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6575,6 +6683,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5018821307757064607, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5383566358943627347, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
@@ -6591,9 +6703,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.09000015
       objectReference: {fileID: 0}
+    - target: {fileID: 7402611843220051908, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_text
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7559985725777122011, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: orthographic size
       value: 7.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305529854027394216, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8171,12 +8291,24 @@ PrefabInstance:
       value: 181.77
       objectReference: {fileID: 0}
     - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.81615
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.81615
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.81615
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 155.84145
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2429991649364689781, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -134.11
+      value: -137
       objectReference: {fileID: 0}
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8215,6 +8347,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerText
+      value: 
+      objectReference: {fileID: 916672389}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerCanvas
+      value: 
+      objectReference: {fileID: 543919092}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: characterName
       value: Lindiwe
       objectReference: {fileID: 0}
@@ -8223,8 +8363,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1327952381}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerYap.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: DialogLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: questDialog.Array.size
-      value: 11
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerYap.Array.data[0]'
+      value: yeah thats me!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerQuestYap.Array.size
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[0]'
@@ -8232,44 +8388,110 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[1]'
-      value: Cool, cool.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'questDialog.Array.data[2]'
       value: So here's the thing, this park runs on people helping people
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'questDialog.Array.data[3]'
+      propertyPath: 'questDialog.Array.data[2]'
       value: that's kind of the whole point
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'questDialog.Array.data[4]'
+      propertyPath: 'questDialog.Array.data[3]'
       value: You don't need an assignment, just walk around
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'questDialog.Array.data[5]'
-      value: alk to whoever's about, and you'll pick up what this place actually
+      propertyPath: 'questDialog.Array.data[4]'
+      value: all to whoever's about, and you'll pick up what this place actually
         is
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'questDialog.Array.data[6]'
+      propertyPath: 'questDialog.Array.data[5]'
       value: ' If you want somewhere to start, Sizwe''s up at the mural wall'
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'questDialog.Array.data[7]'
+      propertyPath: 'questDialog.Array.data[6]'
       value: he's been complaining about running out of paint
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'questDialog.Array.data[8]'
+      propertyPath: 'questDialog.Array.data[7]'
       value: Mr Patel's in the garden
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'questDialog.Array.data[9]'
+      propertyPath: 'questDialog.Array.data[8]'
       value: always needs a hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[9]'
+      value: Rest of them you'll just bump into
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerDialogYap.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[10]'
       value: Rest of them you'll just bump into
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[0]'
+      value: yip thats me
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[1]'
+      value: wow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[2]'
+      value: Yeah, thats why i came. I can't wait to see what you guys do around
+        here
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[3]'
+      value: Yeah, thats why i came. I can't wait to see what you guys do around
+        here
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[4]'
+      value: where should I go?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[5]'
+      value: hmm
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[6]'
+      value: hmm
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[7]'
+      value: hmm
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[8]'
+      value: hmm
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[9]'
+      value: hmm
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[0]'
+      value: hi
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[1]'
+      value: yeah
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[10]'
+      value: hmm
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[11]'
+      value: 'wow thank you '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[12]'
+      value: 'wow thank you '
       objectReference: {fileID: 0}
     - target: {fileID: 5493947311726781617, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
@@ -8292,8 +8514,12 @@ PrefabInstance:
       value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6244233470795091541, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+    - target: {fileID: 6244233470795091541, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
@@ -8485,6 +8711,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1509384190762207761, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509384190762207761, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: Lighting
       value: 
@@ -8608,6 +8842,10 @@ PrefabInstance:
     - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_Name
       value: 'Quest  (Leader) '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: characterName
@@ -12385,6 +12623,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest  (Playground)
       objectReference: {fileID: 0}
+    - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerText
+      value: 
+      objectReference: {fileID: 916672389}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerCanvas
+      value: 
+      objectReference: {fileID: 543919092}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: characterName
       value: Skate Ramp
@@ -12466,6 +12716,14 @@ PrefabInstance:
       value: 19.400003
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerText
+      value: 
+      objectReference: {fileID: 916672389}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: playerCanvas
+      value: 
+      objectReference: {fileID: 543919092}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: characterName
       value: Themba
       objectReference: {fileID: 0}
@@ -12498,8 +12756,28 @@ PrefabInstance:
       value: jut looked at your map
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerQuestYap.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[0]'
       value: You shoud check out the park before it gets dark
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: PlayerDialogYap.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerQuestYap.Array.data[0]'
+      value: I will get on it
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[0]'
+      value: hi
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[1]'
+      value: oh wow, thank you
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13179,6 +13457,10 @@ PrefabInstance:
     - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_Name
       value: Quest  (Garden)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: characterName
@@ -22131,6 +22413,9 @@ MonoBehaviour:
   characterName: Themba
   TextMeshPro: {fileID: 6244233470654495250}
   Canvas: {fileID: 5493947312419918070}
+  playerCanvas: {fileID: 0}
+  playerText: {fileID: 0}
+  PlayerDialogYap: []
   NumberOfDialog: 0
   CurrentNumberOfDialog: 0
   InConvo: 0
@@ -22146,6 +22431,7 @@ MonoBehaviour:
   - hehe, don't worry there is a video that will explain the rules
   - here let me send it to you
   - here let me send it to you
+  PlayerQuestYap: []
 --- !u!224 &4834614317647389542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22883,6 +23169,9 @@ MonoBehaviour:
   characterName: Lindiwe
   TextMeshPro: {fileID: 5974106999361965928}
   Canvas: {fileID: 3255549651994971174}
+  playerCanvas: {fileID: 0}
+  playerText: {fileID: 0}
+  PlayerDialogYap: []
   NumberOfDialog: 0
   CurrentNumberOfDialog: 0
   InConvo: 0
@@ -22894,6 +23183,7 @@ MonoBehaviour:
   questDialog:
   - You need to hurry
   - You need to hurry
+  PlayerQuestYap: []
 --- !u!224 &8011175926104832493
 RectTransform:
   m_ObjectHideFlags: 0
