@@ -516,6 +516,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &89067784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9186451717451469951, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &115384177
 GameObject:
   m_ObjectHideFlags: 0
@@ -6963,6 +6968,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1745718092659529562, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1768363692637028754, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: m_Name
       value: Line --freeby--
@@ -8064,6 +8073,11 @@ PrefabInstance:
     - {fileID: 846742948861747453, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
     - {fileID: 657959240026028580, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
     - {fileID: 7428410700070216369, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+    - {fileID: 1633888637539803180, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+    - {fileID: 8845828249672464036, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+    - {fileID: 6731071903901716011, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+    - {fileID: 471502302420792497, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+    - {fileID: 7098027132579180092, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4304026240085203776, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       insertIndex: -1
@@ -8151,6 +8165,11 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 526161963}
   exsplainerScene: 
+--- !u!1 &314611401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1768363692637028754, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &347690740
 GameObject:
   m_ObjectHideFlags: 0
@@ -8789,7 +8808,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: onMapQuest
       value: 
-      objectReference: {fileID: 1104841684}
+      objectReference: {fileID: 767414848}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: gameManager
       value: 
@@ -8797,7 +8816,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: lineThroughQuest
       value: 
-      objectReference: {fileID: 295194958}
+      objectReference: {fileID: 1188169774}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -9313,6 +9332,11 @@ PolygonCollider2D:
       - {x: 0.6738927, y: 0.057096176}
       - {x: 0.6961551, y: 0.28038085}
   m_UseDelaunayMesh: 1
+--- !u!1 &514253270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5192749288012847435, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &526161963 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -9696,7 +9720,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: onMapQuest
       value: 
-      objectReference: {fileID: 1104841684}
+      objectReference: {fileID: 1068107367}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: startQuest
       value: 1
@@ -9712,7 +9736,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: lineThroughQuest
       value: 
-      objectReference: {fileID: 295194958}
+      objectReference: {fileID: 1488426781}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -10253,7 +10277,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: onMapQuest
       value: 
-      objectReference: {fileID: 1104841684}
+      objectReference: {fileID: 1899389116}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: StampsCount
       value: 4
@@ -10269,7 +10293,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: lineThroughQuest
       value: 
-      objectReference: {fileID: 295194958}
+      objectReference: {fileID: 514253270}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -11075,6 +11099,11 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &767414848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5879862267188682905, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &817895675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11828,7 +11857,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: onMapQuest
       value: 
-      objectReference: {fileID: 1104841684}
+      objectReference: {fileID: 89067784}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: StampsCount
       value: 5
@@ -11844,7 +11873,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: lineThroughQuest
       value: 
-      objectReference: {fileID: 295194958}
+      objectReference: {fileID: 2079866017}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -13064,6 +13093,11 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &983771574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6032495860819769803, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &991314831
 GameObject:
   m_ObjectHideFlags: 0
@@ -13338,6 +13372,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1063790644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1345095158482734729, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1068107367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 155357266634693462, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1078490563
 GameObject:
   m_ObjectHideFlags: 0
@@ -13593,7 +13637,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: onMapQuest
       value: 
-      objectReference: {fileID: 1104841684}
+      objectReference: {fileID: 1345501759}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: startQuest
       value: 0
@@ -13609,7 +13653,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: lineThroughQuest
       value: 
-      objectReference: {fileID: 295194958}
+      objectReference: {fileID: 314611401}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -14067,6 +14111,11 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1148489566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8655389490297469417, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1187880723
 GameObject:
   m_ObjectHideFlags: 0
@@ -14151,6 +14200,11 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1188169774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1728596303491701690, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1202814311
 GameObject:
   m_ObjectHideFlags: 0
@@ -14543,7 +14597,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: onMapQuest
       value: 
-      objectReference: {fileID: 1104841684}
+      objectReference: {fileID: 983771574}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: StampsCount
       value: 2
@@ -14559,7 +14613,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: lineThroughQuest
       value: 
-      objectReference: {fileID: 295194958}
+      objectReference: {fileID: 1063790644}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -15446,7 +15500,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: onMapQuest
       value: 
-      objectReference: {fileID: 1104841684}
+      objectReference: {fileID: 2127077166}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: StampsCount
       value: 3
@@ -15462,7 +15516,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: lineThroughQuest
       value: 
-      objectReference: {fileID: 295194958}
+      objectReference: {fileID: 1148489566}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -15878,6 +15932,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+--- !u!1 &1345501759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5459109025059876431, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1346654075
 GameObject:
   m_ObjectHideFlags: 0
@@ -16350,6 +16409,11 @@ Transform:
   - {fileID: 949881797}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1488426781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8103769444209687884, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1531533246
 GameObject:
   m_ObjectHideFlags: 0
@@ -22646,6 +22710,11 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 1465833246}
   exsplainerScene: 
+--- !u!1 &1899389116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1992507878314950568, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1982156854
 GameObject:
   m_ObjectHideFlags: 0
@@ -23376,6 +23445,11 @@ Transform:
   - {fileID: 1284380291}
   m_Father: {fileID: 1225106270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2079866017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5743247725732953709, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2097277362
 GameObject:
   m_ObjectHideFlags: 0
@@ -23408,6 +23482,11 @@ Transform:
   - {fileID: 472562921}
   m_Father: {fileID: 1225106270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2127077166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8119760609958543922, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+  m_PrefabInstance: {fileID: 261395625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2135377305
 GameObject:
   m_ObjectHideFlags: 0
