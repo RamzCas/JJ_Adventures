@@ -7096,6 +7096,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -786
       objectReference: {fileID: 0}
+    - target: {fileID: 2475086531657161138, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.43448
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475086531657161138, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.43448
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475086531657161138, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.43448
+      objectReference: {fileID: 0}
     - target: {fileID: 2501357452836694813, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -7716,6 +7728,18 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6859951989481904018, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.43448
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859951989481904018, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.43448
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859951989481904018, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.43448
+      objectReference: {fileID: 0}
     - target: {fileID: 6890911191775992217, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -7790,6 +7814,10 @@ PrefabInstance:
       objectReference: {fileID: -8612935083082544827, guid: b776d147d23e1d444b9d1beb4269c170, type: 2}
     - target: {fileID: 7429109363447370658, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7541223187242115261, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7550896050373919155, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
