@@ -42,12 +42,18 @@ public class Diolog_Test : MonoBehaviour
     private PlayerControler Controls;
     private bool wasInConvo;
 
-    // Independent progress trackers - this is what actually decides when the
-    // conversation is over: both must be exhausted, regardless of which
-    // array is longer.
+    // Independent progress trackers - conversation only ends once both are
+    // exhausted, regardless of which array is longer.
     private int npcIndex;
     private int playerIndex;
     private bool npcTurnNext = true;
+
+    // Shared UI (Canvas / playerCanvas) is the same object across every NPC
+    // that uses this script. Without this guard, every NPC's Update() fights
+    // over that shared object each frame - whichever NPC isn't talking keeps
+    // setting it back to inactive, even while another NPC IS talking.
+    // This tracks which single NPC currently "owns" the shared dialog UI.
+    private static GameObject currentSpeaker;
 
     private void Awake()
     {
@@ -66,10 +72,31 @@ public class Diolog_Test : MonoBehaviour
     {
         Controls.Player.Dialog.performed -= DialogControls;
         Controls.Disable();
+
+        // If this NPC gets disabled mid-conversation, release ownership so
+        // it doesn't get stuck "holding" the shared UI forever.
+        if (currentSpeaker == gameObject)
+            currentSpeaker = null;
     }
 
     private void Update()
     {
+        // Not talking, and not the NPC that owns the shared UI right now -
+        // don't touch Canvas / playerCanvas / player movement at all.
+        bool isActiveSpeaker = currentSpeaker == null || currentSpeaker == gameObject;
+
+        if (!InteractPt.activeSelf && isActiveSpeaker)
+        {
+            InConvo = true;
+            currentSpeaker = gameObject;
+        }
+
+        if (!isActiveSpeaker)
+        {
+            // Someone else is mid-conversation - stay out of the way entirely.
+            return;
+        }
+
         RefreshDialogCount();
 
         var (npcLines, playerLines) = GetActiveDialogArrays();
@@ -93,11 +120,6 @@ public class Diolog_Test : MonoBehaviour
             InConvo = false;
         }
 
-        if (!InteractPt.activeSelf)
-        {
-            InConvo = true;
-        }
-
         if (InConvo && !wasInConvo)
         {
             // Just entered conversation this frame - show the opening line.
@@ -116,6 +138,10 @@ public class Diolog_Test : MonoBehaviour
             npcIndex = 0;
             playerIndex = 0;
             npcTurnNext = true;
+
+            if (currentSpeaker == gameObject)
+                currentSpeaker = null;
+
             PlayerController.CurrentSpeed = PlayerController.Speed;
         }
 
@@ -124,7 +150,7 @@ public class Diolog_Test : MonoBehaviour
 
     public void DialogControls(InputAction.CallbackContext context)
     {
-        if (InConvo && context.performed)
+        if (InConvo && context.performed && currentSpeaker == gameObject)
         {
             Debug.Log("Convo Progress");
             AdvanceDialog();
