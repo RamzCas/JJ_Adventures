@@ -10118,6 +10118,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330787557}
   m_CullTransparentMesh: 1
+--- !u!114 &333070825 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 648206805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02a4e7f4357e83419cba095139c2630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestManager
 --- !u!1 &335105355
 GameObject:
   m_ObjectHideFlags: 0
@@ -10708,6 +10719,17 @@ RectTransform:
   m_AnchoredPosition: {x: -506, y: -394}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &377834239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 846524289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02a4e7f4357e83419cba095139c2630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestManager
 --- !u!1 &379672961
 GameObject:
   m_ObjectHideFlags: 0
@@ -12866,11 +12888,52 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &564766670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 846524289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &564766675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7853548040079537140, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 846524289}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &564766676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564766670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+  InteractPt: {fileID: 1121817512}
+  DialogLines:
+  - how have u been enjoying your time?
+  characterNameCanvas: {fileID: 1786260883}
+  characterName: Thando
+  TextMeshPro: {fileID: 801495640}
+  Canvas: {fileID: 388206003}
+  playerCanvas: {fileID: 543919092}
+  playerText: {fileID: 916672389}
+  PlayerDialogYap: []
+  NumberOfDialog: 0
+  CurrentNumberOfDialog: 0
+  InConvo: 0
+  PlayerController: {fileID: 1327952381}
+  QuestManager: {fileID: 377834239}
+  giverOfQuest: 0
+  QuestNPC: 0
+  enderOfQuest: 0
+  questDialog:
+  - Did u get the stamp?
+  - 'fair, but it is by the tent '
+  PlayerQuestYap:
+  - not yet
+  - 'thank you '
 --- !u!1 &578114817
 GameObject:
   m_ObjectHideFlags: 0
@@ -14351,6 +14414,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2106718012}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: TextMeshPro
       value: 
       objectReference: {fileID: 810439560}
@@ -14713,6 +14780,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1884987152}
+    - targetCorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1230705130}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &648206806 stripped
 Transform:
@@ -17757,7 +17827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[2]'
-      value: ah thats a problem ever where but thats we a dictionary
+      value: ah thats a problem every where in the world but thats we a dictionary
       objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[3]'
@@ -18091,6 +18161,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1635473926}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 564766676}
     - targetCorrespondingSourceObject: {fileID: 4453658800266991635, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1564413118}
@@ -21082,6 +21155,11 @@ RectTransform:
   m_AnchoredPosition: {x: -506, y: -282}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1121817512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4551402176493199887, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 846524289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1130077414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22363,16 +22441,104 @@ Transform:
   - {fileID: 1444449031}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1230705124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 648206805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1230705129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7853548040079537140, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 648206805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1230705130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230705124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+  InteractPt: {fileID: 1411539365}
+  DialogLines:
+  - How are you fiding the park
+  - I'm glad, a lot of work went into the park
+  - not as nice, we did a lot of revamping
+  - yip, we hav made this place a safe space
+  characterNameCanvas: {fileID: 183921954}
+  characterName: Auntie Nomvula
+  TextMeshPro: {fileID: 1765015636}
+  Canvas: {fileID: 485571233}
+  playerCanvas: {fileID: 543919092}
+  playerText: {fileID: 916672389}
+  PlayerDialogYap:
+  - yeah it great!
+  - how was it before?
+  - wow, this place must be special
+  NumberOfDialog: 0
+  CurrentNumberOfDialog: 0
+  InConvo: 0
+  PlayerController: {fileID: 1327952381}
+  QuestManager: {fileID: 333070825}
+  giverOfQuest: 0
+  QuestNPC: 0
+  enderOfQuest: 0
+  questDialog:
+  - I wonder if Mr Patel noticed
+  PlayerQuestYap:
+  - hehe, i am sure he did
+--- !u!1 &1235255240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1338029873}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1235255245 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7853548040079537140, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 1338029873}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1235255246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235255240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+  InteractPt: {fileID: 1544133329}
+  DialogLines:
+  - thank you again for your help
+  - oh for a few years now. It's been a plesent hobby
+  - indeed hahaha
+  characterNameCanvas: {fileID: 78807426}
+  characterName: Mr Petel
+  TextMeshPro: {fileID: 408543502}
+  Canvas: {fileID: 2002602117}
+  playerCanvas: {fileID: 543919092}
+  playerText: {fileID: 916672389}
+  PlayerDialogYap:
+  - oh it's no problem, how long have you been gardening
+  - wow must have some grean fingers huh
+  NumberOfDialog: 0
+  CurrentNumberOfDialog: 0
+  InConvo: 0
+  PlayerController: {fileID: 1327952381}
+  QuestManager: {fileID: 1338029875}
+  giverOfQuest: 0
+  QuestNPC: 0
+  enderOfQuest: 0
+  questDialog:
+  - Did you talk to Lindwe?
+  PlayerQuestYap:
+  - no not yet
 --- !u!1 &1240069052
 GameObject:
   m_ObjectHideFlags: 0
@@ -23993,6 +24159,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1903567481}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: TextMeshPro
       value: 
       objectReference: {fileID: 431492304}
@@ -24366,7 +24536,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1990273027}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1235255246}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &1338029874 stripped
 Transform:
@@ -24901,6 +25074,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404035682}
   m_CullTransparentMesh: 1
+--- !u!1 &1411539365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4551402176493199887, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 648206805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1415512074 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4696121714869283574, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
@@ -26108,6 +26286,11 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1544133329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4551402176493199887, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1338029873}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1561644453
 GameObject:
   m_ObjectHideFlags: 0
