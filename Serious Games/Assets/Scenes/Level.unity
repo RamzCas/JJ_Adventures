@@ -12913,13 +12913,19 @@ MonoBehaviour:
   InteractPt: {fileID: 1121817512}
   DialogLines:
   - how have u been enjoying your time?
+  - 'oh thats great '
+  - ah thats a problem every where in the world but thats we a dictionary
+  - ah, your getting it!
   characterNameCanvas: {fileID: 1786260883}
   characterName: Thando
   TextMeshPro: {fileID: 801495640}
   Canvas: {fileID: 388206003}
   playerCanvas: {fileID: 543919092}
   playerText: {fileID: 916672389}
-  PlayerDialogYap: []
+  PlayerDialogYap:
+  - it's been great!
+  - 'yeah, only thing is the lanuage barrier '
+  - the beaty of Mzansi
   NumberOfDialog: 0
   CurrentNumberOfDialog: 0
   InConvo: 0
@@ -14012,6 +14018,10 @@ PrefabInstance:
     - target: {fileID: 6244233470795091541, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Name
+      value: NPC_Normal (non use)
       objectReference: {fileID: 0}
     - target: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
@@ -17797,6 +17807,10 @@ PrefabInstance:
       propertyPath: Canvas
       value: 
       objectReference: {fileID: 713441610}
+    - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: TextMeshPro
       value: 
