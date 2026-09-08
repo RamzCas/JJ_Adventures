@@ -7165,6 +7165,10 @@ PrefabInstance:
       value: -0.000026703
       objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: playerCanvas
       value: 
       objectReference: {fileID: 543919092}
@@ -7656,7 +7660,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7853548040079537140, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1816278521}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1764221747}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &229660838 stripped
 Transform:
@@ -7666,6 +7673,11 @@ Transform:
 --- !u!4 &229660839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7853548040079537140, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 229660837}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &246330645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4551402176493199887, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 229660837}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &248358840
@@ -12369,6 +12381,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &489682403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1260569909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02a4e7f4357e83419cba095139c2630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestManager
 --- !u!1 &508334393
 GameObject:
   m_ObjectHideFlags: 0
@@ -14859,6 +14882,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &675143361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3255549651568375905, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 229660837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &678534698
 GameObject:
   m_ObjectHideFlags: 0
@@ -16479,6 +16507,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785221534}
   m_CullTransparentMesh: 1
+--- !u!114 &787515014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5974106998949198639, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 229660837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &800477351
 GameObject:
   m_ObjectHideFlags: 0
@@ -18198,6 +18237,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855462019}
   m_CullTransparentMesh: 1
+--- !u!1 &860798930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4551402176493199887, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1260569909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &875492368
 GameObject:
   m_ObjectHideFlags: 0
@@ -22829,6 +22873,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1339585189}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: TextMeshPro
       value: 
       objectReference: {fileID: 885705390}
@@ -23022,11 +23070,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853548040079537140, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.7
+      value: -27.64
       objectReference: {fileID: 0}
     - target: {fileID: 7853548040079537140, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.400003
+      value: 27.52
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: Canvas
@@ -23147,6 +23195,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 309800662}
+    - targetCorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1781660668}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &1260569910 stripped
 Transform:
@@ -27380,6 +27431,51 @@ Transform:
   - {fileID: 162777998}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1764221742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 229660837}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1764221747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764221742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+  InteractPt: {fileID: 246330645}
+  DialogLines:
+  - Thanks for getting the can's
+  - 'It is to pay homage to Jozi My Jozi and all of their work '
+  - Your gonna have to ask Auntie Nomvula, she is the community leader
+  characterNameCanvas: {fileID: 2086708570}
+  characterName: Sizwe
+  TextMeshPro: {fileID: 787515014}
+  Canvas: {fileID: 675143361}
+  playerCanvas: {fileID: 543919092}
+  playerText: {fileID: 916672389}
+  PlayerDialogYap:
+  - No problem, whats the mural about?
+  - Wow, what specificly did they do here?
+  - oh ok, thank you and good luck!
+  NumberOfDialog: 0
+  CurrentNumberOfDialog: 0
+  InConvo: 0
+  PlayerController: {fileID: 1327952381}
+  QuestManager: {fileID: 1376941437}
+  giverOfQuest: 0
+  QuestNPC: 0
+  enderOfQuest: 0
+  questDialog:
+  - 'Got to get this done before I loose the light '
+  - or it will be chaai
+  PlayerQuestYap:
+  - don't worry, I'll get them
 --- !u!1 &1765015634
 GameObject:
   m_ObjectHideFlags: 0
@@ -27840,11 +27936,60 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1781660662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6274830784817389512, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1260569909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1781660667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7853548040079537140, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 1260569909}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1781660668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781660662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+  InteractPt: {fileID: 860798930}
+  DialogLines:
+  - I'm so happy they put in a ramp
+  - nah, from what I hear this place wasn't as nice as it is now
+  - 'yeah i mean u see these lamps '
+  - ah yeah mampara can't you see that
+  - it was apart of Jozi My Jozi light somthing somthing
+  characterNameCanvas: {fileID: 1809568463}
+  characterName: Themba
+  TextMeshPro: {fileID: 1082332863}
+  Canvas: {fileID: 999771731}
+  playerCanvas: {fileID: 543919092}
+  playerText: {fileID: 916672389}
+  PlayerDialogYap:
+  - 'oh, was there not one before '
+  - wow hecitc
+  - 'yeah, are new too '
+  - 'oh....I supose they are shinny '
+  - hm nice!
+  NumberOfDialog: 0
+  CurrentNumberOfDialog: 0
+  InConvo: 0
+  PlayerController: {fileID: 1327952381}
+  QuestManager: {fileID: 489682403}
+  giverOfQuest: 0
+  QuestNPC: 0
+  enderOfQuest: 0
+  questDialog:
+  - You shoud check out the park before it gets dark
+  - You need to hurry
+  PlayerQuestYap:
+  - I will get on it
 --- !u!1 &1782925521
 GameObject:
   m_ObjectHideFlags: 0
@@ -35180,6 +35325,17 @@ Transform:
   - {fileID: 1284380291}
   m_Father: {fileID: 1225106270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2086708570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2066746953985724257, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 229660837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &2097277362
 GameObject:
   m_ObjectHideFlags: 0
