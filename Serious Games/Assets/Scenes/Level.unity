@@ -7893,8 +7893,16 @@ PrefabInstance:
       value: -0.000026703
       objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: TextMeshPro
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: playerCanvas
@@ -16591,9 +16599,6 @@ PrefabInstance:
       addedObject: {fileID: 636887537}
     - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 636887542}
-    - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 636887543}
     - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
@@ -16641,23 +16646,6 @@ MonoBehaviour:
   SceneLoader: {fileID: 1264578821}
   afterConvo: 2
   otherGameObject: {fileID: 1982156854}
-  exsplainerScene: 
---- !u!114 &636887542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636887529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
-  Diolog_Test: {fileID: 636887533}
-  SceneLoader: {fileID: 0}
-  afterConvo: 3
-  otherGameObject: {fileID: 1738961073}
   exsplainerScene: 
 --- !u!60 &636887543
 PolygonCollider2D:
