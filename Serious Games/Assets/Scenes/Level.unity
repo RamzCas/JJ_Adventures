@@ -32042,7 +32042,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1450686504}
-  - component: {fileID: 1450686505}
   m_Layer: 0
   m_Name: Turn_Off_NPC
   m_TagString: Untagged
@@ -32065,20 +32064,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 880357724}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1450686505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450686503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5450101ef34d8742b37da599e2b4c4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Turn_Off_NPC
-  theTriggr: {fileID: 880357725}
-  NPC: {fileID: 636887529}
 --- !u!1 &1465833246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
