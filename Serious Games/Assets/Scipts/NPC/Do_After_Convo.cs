@@ -7,6 +7,7 @@ public class Do_After_Convo : MonoBehaviour
     [Header("Other Scipts")]
     public Diolog_Test Diolog_Test;
     public SceneLoader SceneLoader;
+    public bool wasInConvo;
 
     [Header("State")]
 
@@ -27,7 +28,8 @@ public class Do_After_Convo : MonoBehaviour
 
     private void Update()
     {
-        if(Diolog_Test.CurrentNumberOfDialog >= Diolog_Test.NumberOfDialog - 1f) 
+        //if (Diolog_Test.CurrentNumberOfDialog >= Diolog_Test.NumberOfDialog - 1f) 
+        if(wasInConvo && !Diolog_Test.InConvo)
         {
             switch (afterConvo) 
             {
@@ -53,9 +55,11 @@ public class Do_After_Convo : MonoBehaviour
                     case WhatToDoAfterConvo.nothing:
                     break;
             }
+
+            //wasInConvo = Diolog_Test.InConvo;
         }
 
-      
+        wasInConvo = Diolog_Test.InConvo;
     }
 
 }

@@ -6,6 +6,7 @@ public class Game_Manager : MonoBehaviour
     public int maxStamps;
     public int currentStamps;
     public GameObject finalrig;
+    public GameObject Trig;
 
     private void Update()
     {
@@ -24,6 +25,7 @@ public class Game_Manager : MonoBehaviour
         if (currentStamps == 8) 
         {
             finalrig.SetActive(true);
+            Trig.SetActive(true);
         }
     }
 }
