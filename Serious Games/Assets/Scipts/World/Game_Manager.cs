@@ -15,10 +15,11 @@ public class Game_Manager : MonoBehaviour
 
     public void MoveToMiniGame() 
     {
-       /* if(currentStamps <= maxStamps) 
+        if(currentStamps <= maxStamps) 
         {
             //move to the marble game scene 
-        }*/
+            //Debug.Log("To_Marbels");
+        }
 
         if (currentStamps == 8) 
         {
