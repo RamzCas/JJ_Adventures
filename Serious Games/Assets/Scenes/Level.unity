@@ -12468,6 +12468,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1032170280}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
       objectReference: {fileID: 1626310719}
@@ -13488,6 +13524,42 @@ PrefabInstance:
       propertyPath: lineThroughQuest
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -16900,6 +16972,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
       objectReference: {fileID: 1626310719}
@@ -18071,6 +18179,42 @@ PrefabInstance:
       propertyPath: lineThroughQuest
       value: 
       objectReference: {fileID: 578114817}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -22271,6 +22415,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1202017516}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
       objectReference: {fileID: 1626310719}
@@ -24996,6 +25176,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 821264274}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
       objectReference: {fileID: 1626310719}
@@ -26728,6 +26944,42 @@ PrefabInstance:
       propertyPath: lineThroughQuest
       value: 
       objectReference: {fileID: 1914904018}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -30801,6 +31053,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5632166}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
       objectReference: {fileID: 1626310719}
@@ -33653,6 +33941,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1158747406}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
       objectReference: {fileID: 1626310719}
@@ -35320,6 +35644,42 @@ PrefabInstance:
       propertyPath: lineThroughQuest
       value: 
       objectReference: {fileID: 1534841392}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[7]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'Stamps.Array.data[8]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'BadgeHolder.Array.data[0]'
       value: 
@@ -46327,15 +46687,15 @@ MonoBehaviour:
   - {fileID: 1415512074}
   badgeNumber: 7
   Stamps:
-  - {fileID: 21300000, guid: 50d3cd2f336704fcf9cf5b293c10ba9c, type: 3}
-  - {fileID: 21300000, guid: 46e8f61d13f8b49c7b2ac6beb5788f2c, type: 3}
-  - {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
-  - {fileID: 21300000, guid: 00b8ce4a201871b498992f536279acf7, type: 3}
-  - {fileID: 21300000, guid: 748ae8b33df036b46a86e0387f1602cf, type: 3}
-  - {fileID: 21300000, guid: a3c4ea29a117e3f418ded11a50e4d52d, type: 3}
-  - {fileID: 21300000, guid: 70769958773904c02bc91efe3db06047, type: 3}
-  - {fileID: 21300000, guid: 19b06b801c204604290761788cf6e125, type: 3}
-  - {fileID: 21300000, guid: c54623997d885f6499655af6031a3bf9, type: 3}
+  - {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
+  - {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+  - {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+  - {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+  - {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+  - {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+  - {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+  - {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
+  - {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
   StampsCount: 7
   icon: {fileID: 7196084699363481045}
   onMapQuest: {fileID: 0}
