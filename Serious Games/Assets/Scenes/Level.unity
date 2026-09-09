@@ -23321,8 +23321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -157.72, y: 136.74}
-  m_SizeDelta: {x: 108.4562, y: 91.7136}
+  m_AnchoredPosition: {x: -176.4, y: 136.74}
+  m_SizeDelta: {x: 181.1061, y: 91.7136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678344740
 MonoBehaviour:
@@ -23344,7 +23344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 761ed63b1cd0d93489dc23b4a3faaf4f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 20085ae98354dd34fac52563be7c0fdb, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -31744,15 +31744,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.9014183
+      value: 1.1828723
+      objectReference: {fileID: 0}
+    - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.416789
       objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.88
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.91
+      value: -16.4
       objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31782,6 +31786,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1329348139790300590, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -31800,7 +31808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: Lighting
@@ -32003,6 +32011,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1845031157}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: characterName
+      value: Spray Can
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
       value: 
       objectReference: {fileID: 1327952381}
@@ -32016,7 +32028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: questDialog.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[0]'
@@ -32028,7 +32040,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerQuestYap.Array.size
-      value: 4
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'questDialog.Array.data[0]'
+      value: '*There is a spray can*'
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerDialogYap.Array.size
@@ -32036,11 +32052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[0]'
-      value: yes, I am starving
+      value: Hey a spray can
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[1]'
-      value: ok, here is R40.00, keep the change
+      value: oh, there is a stamp behind it
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[2]'
@@ -32225,6 +32241,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1130077428}
+    - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1130077433}
     - targetCorrespondingSourceObject: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2054724901}
@@ -32341,6 +32360,35 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1130077431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1130077414}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130077418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
+--- !u!114 &1130077433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130077418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
+  Diolog_Test: {fileID: 1130077431}
+  SceneLoader: {fileID: 0}
+  wasInConvo: 0
+  afterConvo: 2
+  otherGameObject: {fileID: 1130077418}
+  exsplainerScene: 
 --- !u!1 &1130868410
 GameObject:
   m_ObjectHideFlags: 0
@@ -46628,7 +46676,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.090039074, y: 0.011857271}
+  m_Offset: {x: -0.019584388, y: 0.011857271}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -46638,7 +46686,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9604529, y: 1.8933625}
+  m_Size: {x: 1.8195436, y: 1.8933625}
   m_EdgeRadius: 0
 --- !u!1 &2062979792
 GameObject:
