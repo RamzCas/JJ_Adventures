@@ -11,6 +11,7 @@ public class Diolog_Test : MonoBehaviour
     [Header("Components")]
 
     public GameObject InteractPt;
+    public int backgroundNumber;
 
     // Normal NPC dialogue.
     public string[] DialogLines;

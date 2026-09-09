@@ -27,6 +27,12 @@ public class PlayerController : MonoBehaviour
     public float RayDistance;
     public Transform Player;
 
+    public RawImage backgroundBase;
+    public GameObject backgroundGameObject;
+    public Texture2D[] backgroundTextures;
+    [SerializeField]private Diolog_Test diolog_;
+    public GameObject Tasks;
+
     [Header("UI Guide")]
     public int UI_Count;
     public GameObject UI_Base;
@@ -97,6 +103,31 @@ public class PlayerController : MonoBehaviour
         Ray();
         SprintThings();
         ShowInteractKey();
+
+        if (diolog_ != null) 
+        {
+            if (diolog_.InConvo)
+            {
+                Debug.Log("Show Background");
+                backgroundGameObject.SetActive(true);
+                backgroundBase.texture = backgroundTextures[diolog_.backgroundNumber];
+                //Tasks.SetActive(false);
+            }
+            /*
+                        else 
+                        {
+                            diolog_ = null;
+                            backgroundGameObject.SetActive(false);
+                        }*/
+
+            if (!diolog_.InConvo) 
+            {
+                backgroundGameObject.SetActive(false);
+                //Tasks.SetActive(false);
+                diolog_ = null;
+            }
+        }
+       
     }
 
     public void Ray()
@@ -123,6 +154,13 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("Interactable");
                 CanInteract = true;
+
+            }
+
+            if (hit2D.collider.CompareTag("Finish"))
+            {
+                //Debug.Log("AI");
+                diolog_ = hit2D.collider.GetComponent<Diolog_Test>();
             }
         }
 
@@ -148,7 +186,14 @@ public class PlayerController : MonoBehaviour
                     {
                         Debug.Log("Interactable");
                         hit2D.collider.gameObject.SetActive(false);
+                        //diolog_ = hit2D.collider.GetComponent<Diolog_Test>();
                     }
+
+                   /* if (hit2D.collider.CompareTag("Finish")) 
+                    {
+                        diolog_ = hit2D.collider.GetComponent<Diolog_Test>();
+                        Debug.Log("AI Script");
+                    }*/
                 }
             }
         }
