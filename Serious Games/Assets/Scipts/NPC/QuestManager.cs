@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class QuestManager : MonoBehaviour
 {
     [Header("Quest constrants")]
+    //4.895 = scale
     public bool startQuest;
     public bool stopQuest;
     public GameObject giverOfQuestGameObject;
@@ -41,6 +42,8 @@ public class QuestManager : MonoBehaviour
         if (stopQuest) 
         {
             BadgeHolder[badgeNumber].sprite = Stamps[StampsCount];
+            //scale edit
+            BadgeHolder[badgeNumber].rectTransform.localScale = new Vector3 (3.71f, 3.71f, 3.71f);
             giverOfQuestGameObject.SetActive(false);
             gameManager.currentStamps += 1;
             lineThroughQuest.SetActive(true);
