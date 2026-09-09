@@ -22,6 +22,12 @@ public class MarbleGameManager : MonoBehaviour
     [SerializeField] 
     private MarbleAIController aiController;
     private SceneLoader sceneLoader;
+    [SerializeField]
+    private Transform playerMarbleHolder;
+    [SerializeField]
+    private Transform oppMarbleHolder;
+    [SerializeField]
+    private GameObject marbleScorePrefab;
 
     [Header("Game State")]
     public TurnState currentTurn = TurnState.PlayerTurn;
@@ -124,14 +130,22 @@ public class MarbleGameManager : MonoBehaviour
             if (previousTurn == TurnState.PlayerTurn)
             {
                 playerScore += marblesKnockedOutThisTurn;
-                playerText.text = $"Player Score: {playerScore}";
+                playerText.text = $"Score: {playerScore}";
+                for(int i = 0; i<marblesKnockedOutThisTurn; i++)
+                {
+                    GameObject scoreMarble = Instantiate(marbleScorePrefab, playerMarbleHolder);
+                }
 
                
             }
             else
             {
                 aiScore += marblesKnockedOutThisTurn;
-                oppText.text = $"Opponent Score: {aiScore}";
+                oppText.text = $"Score: {aiScore}";
+                for (int i = 0; i < marblesKnockedOutThisTurn; i++)
+                {
+                    GameObject scoreMarble = Instantiate(marbleScorePrefab, oppMarbleHolder);
+                }
             }
             Debug.Log($"Valid Shot! Player Score: {playerScore} | AI Score: {aiScore}");
         }
