@@ -7,6 +7,8 @@ public class QuestManager : MonoBehaviour
     //4.895 = scale
     public bool startQuest;
     public bool stopQuest;
+
+
     public GameObject giverOfQuestGameObject;
     public Game_Manager gameManager;
 
@@ -39,6 +41,8 @@ public class QuestManager : MonoBehaviour
             icon.SetActive(false);
         }
 
+
+        //
         if (stopQuest) 
         {
             BadgeHolder[badgeNumber].sprite = Stamps[StampsCount];

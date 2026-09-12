@@ -74,6 +74,8 @@ public class PlayerController : MonoBehaviour
         //Controls.Player.Dialog.canceled -= DialogControls;
 
 
+
+
         Controls.Disable();
     }
 

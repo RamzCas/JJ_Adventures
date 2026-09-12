@@ -21598,6 +21598,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Radius
+      value: 0.5722542
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.020617682
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0027235902
+      objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: playerCanvas
       value: 
@@ -22892,7 +22904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -47953,6 +47965,8 @@ MonoBehaviour:
   PlayerDialogYap: []
   NumberOfDialog: 0
   CurrentNumberOfDialog: 0
+  npcDio: 0
+  playerDio: 0
   InConvo: 0
   PlayerController: {fileID: 1327952381}
   QuestManager: {fileID: 1869487577204384925}
@@ -48711,6 +48725,8 @@ MonoBehaviour:
   PlayerDialogYap: []
   NumberOfDialog: 0
   CurrentNumberOfDialog: 0
+  npcDio: 0
+  playerDio: 0
   InConvo: 0
   PlayerController: {fileID: 1327952381}
   QuestManager: {fileID: 1869487577204384925}
