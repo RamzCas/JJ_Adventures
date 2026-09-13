@@ -180,7 +180,6 @@ MonoBehaviour:
   maxLine: 0
   timerToNextLine: 0
   maxTime: 5
-  SceneLoader: {fileID: 306127590}
   marblesSceneName: MarbleGame
 --- !u!1 &306127589
 GameObject:
@@ -191,7 +190,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306127591}
-  - component: {fileID: 306127590}
   m_Layer: 0
   m_Name: sceneSwitch
   m_TagString: Untagged
@@ -199,18 +197,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &306127590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306127589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b7fd0aafad200f4b8251be95e0c7760, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
 --- !u!4 &306127591
 Transform:
   m_ObjectHideFlags: 0

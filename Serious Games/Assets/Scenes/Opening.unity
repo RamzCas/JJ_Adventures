@@ -365,8 +365,7 @@ MonoBehaviour:
   maxLine: 0
   timerToNextLine: 0
   maxTime: 5
-  SceneLoader: {fileID: 1805057500}
-  marblesSceneName: MarbleGame
+  marblesSceneName: Level
 --- !u!4 &939096129
 Transform:
   m_ObjectHideFlags: 0

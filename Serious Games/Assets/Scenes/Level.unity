@@ -12573,6 +12573,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 150709781}
     m_Modifications:
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Radius
+      value: 0.71094006
+      objectReference: {fileID: 0}
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.047870968
+      objectReference: {fileID: 0}
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.07848894
+      objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.21
@@ -12672,23 +12684,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -12812,6 +12824,18 @@ PrefabInstance:
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 23.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Radius
+      value: 0.46323135
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0039769514
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0039393376
       objectReference: {fileID: 0}
     - target: {fileID: 3255549651568375905, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
@@ -13554,23 +13578,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -16930,23 +16954,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -18019,6 +18043,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7413e47d65010fa4386b2cb8e5c3c0c1, type: 3}
     - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SortingOrder
       value: 25
       objectReference: {fileID: 0}
@@ -18065,23 +18093,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -21489,23 +21517,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -22302,6 +22330,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 150709781}
     m_Modifications:
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Radius
+      value: 0.655955
+      objectReference: {fileID: 0}
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.01799307
+      objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -74.6
@@ -22377,23 +22413,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -24995,6 +25031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Quest_Normal
       objectReference: {fileID: 0}
+    - target: {fileID: 4675888346052152807, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8265448129962545676, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: m_Color.b
       value: 0.45640567
@@ -25723,23 +25763,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -25831,6 +25871,18 @@ PrefabInstance:
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Radius
+      value: 0.60670084
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.029237153
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0076214657
       objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: playerCanvas
@@ -27445,6 +27497,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 150709781}
     m_Modifications:
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Radius
+      value: 0.49191043
+      objectReference: {fileID: 0}
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.022757271
+      objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.1
@@ -27452,6 +27512,10 @@ PrefabInstance:
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
       value: -14.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SortingOrder
@@ -27463,6 +27527,10 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b776d147d23e1d444b9d1beb4269c170, type: 2}
     - target: {fileID: 1329348139790300590, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -27500,23 +27568,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -27937,7 +28005,8 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
     m_RemovedGameObjects:
     - {fileID: 3255549651568375905, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
     - {fileID: 2247010028333198410, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -27954,9 +28023,15 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1737649442}
     - targetCorrespondingSourceObject: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 2107956407}
+    - targetCorrespondingSourceObject: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 471762894}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 846524292}
     - targetCorrespondingSourceObject: {fileID: 4453658800266991635, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1564413118}
@@ -27966,6 +28041,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7693838543345951040, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 846524289}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &846524291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 846524289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &846524292
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846524291}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.017678976, y: 0.02876553}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.9382651, y: 1.118989}
+  m_EdgeRadius: 0
 --- !u!1 &855462019
 GameObject:
   m_ObjectHideFlags: 0
@@ -31579,23 +31705,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -34224,6 +34350,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6162002739428182164, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+      propertyPath: m_Radius
+      value: 0.6515716
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162002739428182164, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.010512496
+      objectReference: {fileID: 0}
     - target: {fileID: 8265448129962545676, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: m_Color.b
       value: 0.45640567
@@ -34586,6 +34720,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 150709781}
     m_Modifications:
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Radius
+      value: 0.59882027
+      objectReference: {fileID: 0}
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.021351427
+      objectReference: {fileID: 0}
+    - target: {fileID: 152994231565262053, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.01723985
+      objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.8
@@ -34593,6 +34739,10 @@ PrefabInstance:
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 54.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_SortingOrder
@@ -34641,23 +34791,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -34729,6 +34879,18 @@ PrefabInstance:
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 27.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Radius
+      value: 0.5720549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.020271745
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247993972698955205, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.014174663
       objectReference: {fileID: 0}
     - target: {fileID: 3255549651568375905, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
@@ -35083,7 +35245,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 507911909}
     - targetCorrespondingSourceObject: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      insertIndex: 1
+      insertIndex: 0
+      addedObject: {fileID: 2065776528}
+    - targetCorrespondingSourceObject: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: 2
       addedObject: {fileID: 1240363027}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -36435,23 +36600,23 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
+      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
+      objectReference: {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[5]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -44121,6 +44286,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Quest_Normal
       objectReference: {fileID: 0}
+    - target: {fileID: 4675888346052152807, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162002739428182164, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+      propertyPath: m_Radius
+      value: 0.49589425
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162002739428182164, guid: 331364b21c78e9d458443573a5daa816, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.018646808
+      objectReference: {fileID: 0}
     - target: {fileID: 8265448129962545676, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: m_Color.b
       value: 0.45640567
@@ -46420,6 +46597,97 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2065776526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2065776528}
+  - component: {fileID: 2065776527}
+  m_Layer: 0
+  m_Name: 13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &2065776527
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065776526}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 21
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 20, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!4 &2065776528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065776526}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.010240815, y: -0.0063865664, z: 0}
+  m_LocalScale: {x: 0.06129105, y: 0.05780966, z: 0.15202999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 526161968}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067710419
 GameObject:
   m_ObjectHideFlags: 0
@@ -46567,6 +46835,97 @@ Transform:
   - {fileID: 472562921}
   m_Father: {fileID: 1225106270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2107956406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107956407}
+  - component: {fileID: 2107956408}
+  m_Layer: 0
+  m_Name: 11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2107956407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107956406}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00735185, y: 0.018, z: 0}
+  m_LocalScale: {x: 0.07197292, y: 0.06788479, z: 0.17852594}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1618489187}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2107956408
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107956406}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 20, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!4 &2119523174 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -47234,11 +47593,11 @@ MonoBehaviour:
   Stamps:
   - {fileID: 21300000, guid: 2dfdc78f81457b14c9737175f34378c3, type: 3}
   - {fileID: 21300000, guid: 85df1aef26e8e4848a49eeb1656460f1, type: 3}
+  - {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
   - {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
   - {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
   - {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
   - {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
-  - {fileID: 21300000, guid: d12c39ec7dbc8f1458360f65a4ab9bfb, type: 3}
   - {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
   - {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
   StampsCount: 7

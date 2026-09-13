@@ -12,13 +12,16 @@ public class TextCycle : MonoBehaviour
     public bool continueCycling;
     public int currentLine;
     public int maxLine;
+
+
     [Header("Timers")]
     public float timerToNextLine;
     public float maxTime;
 
 
     [Header("scenes")]
-    public SceneLoader SceneLoader;
+    //public SceneLoader SceneLoader;
+    //public string sceneName;
     public string marblesSceneName;
 
     private void Awake()
