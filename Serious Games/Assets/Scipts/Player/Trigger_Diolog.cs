@@ -8,6 +8,8 @@ public class Trigger_Diolog : MonoBehaviour
     public GameObject player;
     //private BoxCollider2D BoxCollider2D;
     public Diolog_Test Diolog_Test;
+    public GameObject InteractPoint;
+    public GameObject QUest;
     public Diolog_Test completerDiologQuest;
     public GameObject completerGameObject;
 
@@ -92,17 +94,19 @@ public class Trigger_Diolog : MonoBehaviour
             //Trigger_Dialog_Components.InConvo = true;
             //this.gameObject.SetActive(false);
             //BoxCollider2D.enabled = false;
-            Diolog_Test.InConvo = true;
+            //Diolog_Test.InConvo = true;
+            InteractPoint.SetActive(false);
+            QUest.SetActive(true);
             this.gameObject.SetActive(false);
         }
     }
 
     private void Update()
     {
-        if (completerDiologQuest.CurrentNumberOfDialog >= completerDiologQuest.NumberOfDialog - 1f)
+     /*   if (completerDiologQuest.CurrentNumberOfDialog >= completerDiologQuest.NumberOfDialog - 1f)
         {
             completerGameObject.SetActive(false);
-        }
+        }*/
     }
 
     /* private void Update()
