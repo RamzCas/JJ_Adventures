@@ -167,12 +167,12 @@ MonoBehaviour:
   stringCycle:
   - 'This is how to play Marbels:'
   - This game is turn based, you will start the game then afterwards it will be the
-    others players turn
+    Ai's turn
+  - you will have to click on the marble and drag the mouse forwards
+  - the more you drag the mouse back the faster the marble will be shot
+  - 'then let go to shoot the marble  '
   - if your marble goes off the board it will swich to your opponents turn
   - 'or if you shoot your marble and you don''t knock any others out '
-  - you will have to click on the marble and drag the mouse forwards
-  - 'then let go to shoot the marble  '
-  - the more you drag the mouse back the faster the marble will be shot
   - Your Goal is to knock out more marbels than your opponent
   - the game will end when there are no more marbles on the board
   continueCycling: 0

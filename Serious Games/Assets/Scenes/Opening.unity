@@ -356,9 +356,11 @@ MonoBehaviour:
   stringCycle:
   - Hope your ride from the airport wasn't too long
   - 'welcome to Johanusburg! '
-  - 'Theank you for volenturing '
+  - Thank you for volunteering
   - 'you heading to Donald Mackay Park '
   - I heard their is an event hapening tonight
+  - Wonder what they have plan
+  - Im sure its gonna be fun
   - you'll meet the locals and have fun.
   continueCycling: 0
   currentLine: 0
