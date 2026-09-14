@@ -4,6 +4,7 @@ public class Game_Manager : MonoBehaviour
 {
     [Header("Stamps")]
     public int maxStamps;
+    public int endStamp;
     public int currentStamps;
     public GameObject finalrig;
     public GameObject Trig;
@@ -23,7 +24,7 @@ public class Game_Manager : MonoBehaviour
             //Debug.Log("To_Marbels");
         }
 
-        if (currentStamps == 7) 
+        if (currentStamps == endStamp) 
         {
             finalrig.SetActive(true);
             Trig.SetActive(true);

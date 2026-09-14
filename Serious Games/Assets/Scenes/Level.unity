@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 21863992}
   - component: {fileID: 21863993}
   - component: {fileID: 21863994}
+  - component: {fileID: 21863995}
   m_Layer: 0
   m_Name: Activate_FreebeQuest
   m_TagString: Untagged
@@ -289,6 +290,7 @@ MonoBehaviour:
   afterConvo: 2
   otherGameObject: {fileID: 1130077417}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!114 &21863994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +309,26 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 1130077418}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
+--- !u!114 &21863995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21863990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
+  Diolog_Test: {fileID: 1338029876}
+  SceneLoader: {fileID: 0}
+  wasInConvo: 0
+  afterConvo: 6
+  otherGameObject: {fileID: 1397050864}
+  exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!1 &30086860
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +779,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go to the kota stand to get lunch
+  m_text: Find the Spray can behind the mural
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b776d147d23e1d444b9d1beb4269c170, type: 2}
   m_sharedMaterial: {fileID: -8612935083082544827, guid: b776d147d23e1d444b9d1beb4269c170, type: 2}
@@ -1149,6 +1171,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57206159}
   m_CullTransparentMesh: 1
+--- !u!114 &69179661 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 411359361}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02a4e7f4357e83419cba095139c2630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestManager
 --- !u!114 &81540500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12699,7 +12732,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -13006,7 +13039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[2]'
-      value: oh Sizwe needs more spray paint
+      value: oh hecitc
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[3]'
@@ -13018,7 +13051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[5]'
-      value: I walking that way anyways.
+      value: I walking that way any ways.
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[6]'
@@ -13620,7 +13653,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -14252,6 +14285,10 @@ PrefabInstance:
       propertyPath: Tasks
       value: 
       objectReference: {fileID: 1774888355}
+    - target: {fileID: 381303708030032940, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
+      propertyPath: CanSprint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 381303708030032940, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
       propertyPath: RayDistance
       value: 2
@@ -16293,6 +16330,26 @@ MonoBehaviour:
   afterConvo: 2
   otherGameObject: {fileID: 301574807}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
+--- !u!114 &301574815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301574807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
+  Diolog_Test: {fileID: 301574810}
+  SceneLoader: {fileID: 0}
+  wasInConvo: 0
+  afterConvo: 5
+  otherGameObject: {fileID: 0}
+  exsplainerScene: 
+  QuestManager: {fileID: 69179661}
 --- !u!114 &302263707 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7329711283324398587, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
@@ -16639,6 +16696,7 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 526161963}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!4 &309800666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -17083,7 +17141,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -18227,7 +18285,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -18402,7 +18460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerDialogYap.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerDialogYap.Array.data[0]'
@@ -18410,6 +18468,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerDialogYap.Array.data[1]'
+      value: 'hey!  A stamp. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[2]'
       value: 'hey!  A stamp. '
       objectReference: {fileID: 0}
     - target: {fileID: 5974106998949198639, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -18481,6 +18543,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1614864215}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: QuestNPC
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: playerText
       value: 
       objectReference: {fileID: 1479661623}
@@ -18488,6 +18554,10 @@ PrefabInstance:
       propertyPath: TextMeshPro
       value: 
       objectReference: {fileID: 1332111320}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: giverOfQuest
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: playerCanvas
       value: 
@@ -18576,6 +18646,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 301574814}
+    - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 301574815}
     - targetCorrespondingSourceObject: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1534160517}
@@ -18905,7 +18978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lunch
+  m_text: Spray can
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b776d147d23e1d444b9d1beb4269c170, type: 2}
   m_sharedMaterial: {fileID: -8612935083082544827, guid: b776d147d23e1d444b9d1beb4269c170, type: 2}
@@ -20483,6 +20556,7 @@ MonoBehaviour:
   afterConvo: 2
   otherGameObject: {fileID: 526161963}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!1 &531035671
 GameObject:
   m_ObjectHideFlags: 0
@@ -21889,7 +21963,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -22056,7 +22130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: questDialog.Array.size
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerYap.Array.data[0]'
@@ -22064,7 +22138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerQuestYap.Array.size
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[0]'
@@ -22084,8 +22158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[4]'
-      value: all to whoever's about, and you'll pick up what this place actually
-        is
+      value: you'll pick up what this place actually is
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[5]'
@@ -22097,15 +22170,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[7]'
-      value: Mr Patel's in the garden
+      value: Mr Patel's in the garden,always needs a hand
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[8]'
-      value: always needs a hand
+      value: Rest of them you'll just bump into
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[9]'
-      value: Rest of them you'll just bump into
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerDialogYap.Array.size
@@ -22427,6 +22500,7 @@ MonoBehaviour:
   afterConvo: 2
   otherGameObject: {fileID: 1982156854}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!60 &636887543
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22535,6 +22609,7 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 2013690402}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!1 &640327013
 GameObject:
   m_ObjectHideFlags: 0
@@ -22918,7 +22993,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -25803,6 +25878,7 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 526161963}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!1001 &792046217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25913,7 +25989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: 'DialogLines.Array.data[1]'
-      value: oh for a few years now. It's been a plesent hobby
+      value: oh for a few years now. It's been a pleasant hobby
       objectReference: {fileID: 0}
     - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: 'DialogLines.Array.data[2]'
@@ -26450,7 +26526,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -26996,6 +27072,7 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 2013690402}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!60 &813475929
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27104,6 +27181,7 @@ MonoBehaviour:
   afterConvo: 1
   otherGameObject: {fileID: 1982156854}
   exsplainerScene: ExsplainMarbels
+  QuestManager: {fileID: 0}
 --- !u!1 &816727201
 GameObject:
   m_ObjectHideFlags: 0
@@ -27251,7 +27329,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 427902658984084625, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
       propertyPath: m_Name
-      value: Trigger_Quest
+      value: Trigger_Quest --Soccer--
       objectReference: {fileID: 0}
     - target: {fileID: 427902658984084625, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
       propertyPath: m_IsActive
@@ -28287,7 +28365,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -28602,7 +28680,7 @@ PrefabInstance:
       objectReference: {fileID: 1911813236}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: DialogLines.Array.size
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: questDialog.Array.size
@@ -28618,31 +28696,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[2]'
-      value: you know the only way we got this place the way it is now
+      value: you know the way this place is now, is through the community
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[3]'
-      value: is through work the comunity has done
+      value: hmm, Ubuntu
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[4]'
-      value: Ubuntu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'DialogLines.Array.data[5]'
       value: we wannted to make this place a safe space
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'DialogLines.Array.data[6]'
-      value: but a way for me to say thank you
+      propertyPath: 'DialogLines.Array.data[5]'
+      value: but a way for me to say thanks, to you
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'DialogLines.Array.data[7]'
+      propertyPath: 'DialogLines.Array.data[6]'
       value: I left a stamp by the volinuter tent on the other side of the tower
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      propertyPath: 'DialogLines.Array.data[8]'
+      propertyPath: 'DialogLines.Array.data[7]'
       value: haha no stress, I know how streaful it can be looking for them
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'DialogLines.Array.data[8]'
+      value: is through work the comunity has done
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerQuestYap.Array.size
@@ -28658,7 +28736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerDialogYap.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[0]'
@@ -28702,6 +28780,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerDialogYap.Array.data[8]'
+      value: dude!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[9]'
       value: dude!
       objectReference: {fileID: 0}
     - target: {fileID: 8750384364430751784, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -30677,7 +30759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: 'DialogLines.Array.data[0]'
-      value: Thanks for getting the can's
+      value: Thanks for getting the spray paint
       objectReference: {fileID: 0}
     - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: 'DialogLines.Array.data[1]'
@@ -32624,7 +32706,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -33164,6 +33246,7 @@ MonoBehaviour:
   afterConvo: 2
   otherGameObject: {fileID: 1130077418}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!1 &1130868410
 GameObject:
   m_ObjectHideFlags: 0
@@ -35746,7 +35829,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -35989,7 +36072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerDialogYap.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[0]'
@@ -35997,6 +36080,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerDialogYap.Array.data[0]'
+      value: nothing here
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[1]'
       value: nothing here
       objectReference: {fileID: 0}
     - target: {fileID: 5974106998949198639, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -36117,7 +36204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[1]'
-      value: You should go check out the ramp at the skate park
+      value: You should go check out the ramp at the park
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[2]'
@@ -36141,7 +36228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerDialogYap.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[0]'
@@ -36153,6 +36240,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerDialogYap.Array.data[1]'
+      value: oh wow, thank you
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: 'PlayerDialogYap.Array.data[2]'
       value: oh wow, thank you
       objectReference: {fileID: 0}
     - target: {fileID: 8750384364430751784, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -37590,7 +37681,7 @@ PrefabInstance:
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[6]'
       value: 
-      objectReference: {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+      objectReference: {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'Stamps.Array.data[7]'
       value: 
@@ -37965,11 +38056,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[4]'
-      value: Lindiwe borrowed some of my gardining tool
+      value: Lindiwe borrowed one of my gardining tools
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'DialogLines.Array.data[5]'
-      value: can u ask here to bring them back?
+      value: can u ask her to bring them back?
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerQuestYap.Array.size
@@ -38118,7 +38209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29709d70d408e04ead84de44941d68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game_Manager
-  maxStamps: 8
+  maxStamps: 9
+  endStamp: 8
   currentStamps: 0
   finalrig: {fileID: 1252672549}
   Trig: {fileID: 1947840065}
@@ -38883,6 +38975,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1397050864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3879213719488386609, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1130077414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1418042440
 GameObject:
   m_ObjectHideFlags: 0
@@ -41481,6 +41578,7 @@ MonoBehaviour:
   afterConvo: 2
   otherGameObject: {fileID: 844965684}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!1 &1625088810
 GameObject:
   m_ObjectHideFlags: 0
@@ -45426,7 +45524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: 'DialogLines.Array.data[3]'
-      value: ah, your getting it!
+      value: haha, your getting it!
       objectReference: {fileID: 0}
     - target: {fileID: 4240365096647712815, guid: 331364b21c78e9d458443573a5daa816, type: 3}
       propertyPath: 'DialogLines.Array.data[4]'
@@ -45699,6 +45797,7 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 1465833246}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!4 &1884987156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -45911,6 +46010,7 @@ MonoBehaviour:
   afterConvo: 2
   otherGameObject: {fileID: 1181726726}
   exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!1 &1914904018
 GameObject:
   m_ObjectHideFlags: 0
@@ -48324,6 +48424,7 @@ MonoBehaviour:
   afterConvo: 3
   otherGameObject: {fileID: 2062979792}
   exsplainerScene: 
+  QuestManager: {fileID: 69179661}
 --- !u!1 &2135377305
 GameObject:
   m_ObjectHideFlags: 0
@@ -48990,7 +49091,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5b0bacb6db1441241aa767948e579c5c, type: 3}
   - {fileID: 21300000, guid: 39c8eb711cd54b84c9455278f96bd906, type: 3}
   - {fileID: 21300000, guid: 15c38c33ecaa64843a6344a610022521, type: 3}
-  - {fileID: 21300000, guid: 6719d3649413626468c695e01a1b9201, type: 3}
+  - {fileID: 21300000, guid: d7033916748a9fe469c43beedaf60143, type: 3}
   - {fileID: 21300000, guid: 2ee352cdd890a8a4595194cdf9d4b3d4, type: 3}
   - {fileID: 21300000, guid: f0633d212b0c622409d27f96c37c53aa, type: 3}
   StampsCount: 7
@@ -50429,6 +50530,7 @@ MonoBehaviour:
   afterConvo: 1
   otherGameObject: {fileID: 0}
   exsplainerScene: ExsplainMarbels
+  QuestManager: {fileID: 0}
 --- !u!4 &7868769963453199000
 Transform:
   m_ObjectHideFlags: 0

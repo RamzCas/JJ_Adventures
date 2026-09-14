@@ -19,12 +19,15 @@ public class Do_After_Convo : MonoBehaviour
         deactivate,
         activate, 
         nothing,
+        endQuest,
+        beginQuest,
     }
 
     [Header("Other Components")]
     public GameObject otherGameObject;
     //public bool switchToMarbelScene;
     public string exsplainerScene;
+    public QuestManager QuestManager;
 
     private void Update()
     {
@@ -54,6 +57,15 @@ public class Do_After_Convo : MonoBehaviour
 
                     case WhatToDoAfterConvo.nothing:
                     break;
+
+                    case WhatToDoAfterConvo.endQuest:
+                    QuestManager.stopQuest = true;
+                    break;
+
+                    case WhatToDoAfterConvo.beginQuest:
+                    QuestManager.startQuest = true;
+                    break;
+                    
             }
 
             //wasInConvo = Diolog_Test.InConvo;
