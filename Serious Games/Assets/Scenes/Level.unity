@@ -328,7 +328,7 @@ MonoBehaviour:
   afterConvo: 6
   otherGameObject: {fileID: 1397050864}
   exsplainerScene: 
-  QuestManager: {fileID: 0}
+  QuestManager: {fileID: 1397050865}
 --- !u!1 &30086860
 GameObject:
   m_ObjectHideFlags: 0
@@ -26701,7 +26701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: questDialog.Array.size
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerYap.Array.data[0]'
@@ -26709,15 +26709,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerQuestYap.Array.size
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[0]'
-      value: Howzit. You're the one Jozi My Jozi sent through?
+      value: You've almost got all the stamps
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[1]'
-      value: So here's the thing, this park runs on people helping people
+      value: you ready to get the final one
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'questDialog.Array.data[2]'
@@ -26762,11 +26762,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[0]'
-      value: yip thats me
+      value: yeah, it's been a journey
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[1]'
-      value: wow
+      value: 100%
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: 'PlayerQuestYap.Array.data[2]'
@@ -27024,9 +27024,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 813475929}
-    - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 813475928}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &813475924 stripped
 Transform:
@@ -27054,25 +27051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
---- !u!114 &813475928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813475926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
-  Diolog_Test: {fileID: 813475927}
-  SceneLoader: {fileID: 0}
-  wasInConvo: 0
-  afterConvo: 3
-  otherGameObject: {fileID: 2013690402}
-  exsplainerScene: 
-  QuestManager: {fileID: 0}
 --- !u!60 &813475929
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -38980,6 +38958,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3879213719488386609, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 1130077414}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1397050865 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 1130077414}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397050864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02a4e7f4357e83419cba095139c2630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestManager
 --- !u!1 &1418042440
 GameObject:
   m_ObjectHideFlags: 0
