@@ -1163,11 +1163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Trigger_Diolog
   playerTag: Player
   player: {fileID: 261395626}
-  Diolog_Test: {fileID: 7873578850308915225}
   InteractPoint: {fileID: 0}
   QUest: {fileID: 0}
-  completerDiologQuest: {fileID: 4776111392904454457}
-  completerGameObject: {fileID: 4068142695446547697}
 --- !u!1 &83541762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,22 +1941,6 @@ Transform:
   - {fileID: 813475924}
   m_Father: {fileID: 1754689714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &151030376 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-  m_PrefabInstance: {fileID: 350045250}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &151030379 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-  m_PrefabInstance: {fileID: 350045250}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151030376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
 --- !u!114 &151497177 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 89423041827458224, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
@@ -13415,7 +13396,8 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4323124495759829809, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
     m_RemovedGameObjects:
     - {fileID: 3255549651568375905, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
     - {fileID: 2247010028333198410, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -13443,7 +13425,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1466506555}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1685757973}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &229660838 stripped
 Transform:
@@ -13852,17 +13837,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7693838543345951040, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 248358840}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &248358842 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-  m_PrefabInstance: {fileID: 248358840}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
 --- !u!1 &248358843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -16257,22 +16231,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 229660837}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &301574807 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-  m_PrefabInstance: {fileID: 411359361}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &301574810 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-  m_PrefabInstance: {fileID: 411359361}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301574807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
 --- !u!4 &301574811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -17264,17 +17222,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7693838543345951040, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 350045250}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &350045252 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
-  m_PrefabInstance: {fileID: 350045250}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Diolog_Test
 --- !u!1 &350045253 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -18098,11 +18045,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -41.61
+      value: -39.4
       objectReference: {fileID: 0}
     - target: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 100.17
+      value: 42.1
       objectReference: {fileID: 0}
     - target: {fileID: 730745182027835229, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_Sprite
@@ -18144,6 +18091,14 @@ PrefabInstance:
       propertyPath: onMapQuest
       value: 
       objectReference: {fileID: 2062979792}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: StampsCount
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      propertyPath: badgeNumber
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: gameManager
       value: 
@@ -18258,11 +18213,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.1
+      value: -1.79
       objectReference: {fileID: 0}
     - target: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 3528517488744368909, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: playerCanvas
@@ -18290,7 +18245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695131168952052756, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4776111393821398398, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: Canvas
@@ -18522,6 +18477,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1511433612}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2119523177}
     - targetCorrespondingSourceObject: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1534160517}
@@ -18716,7 +18674,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 411359361}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2111681639}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d51a7b6d3c8b7e94999c1aecc959d5fc, type: 3}
@@ -27312,11 +27270,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Trigger_Diolog
   playerTag: Player
   player: {fileID: 261395626}
-  Diolog_Test: {fileID: 435559038}
   InteractPoint: {fileID: 1555211937}
   QUest: {fileID: 1602478760}
-  completerDiologQuest: {fileID: 301574810}
-  completerGameObject: {fileID: 301574807}
 --- !u!1 &819926406
 GameObject:
   m_ObjectHideFlags: 0
@@ -29114,7 +29069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 427902658984084625, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 590202665319524392, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
       propertyPath: m_LocalScale.x
@@ -29134,11 +29089,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.08
+      value: 3.94
       objectReference: {fileID: 0}
     - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -65.8
+      value: -69.92
       objectReference: {fileID: 0}
     - target: {fileID: 2244322523439760167, guid: e92017218208f3c468bd5027d69b8d3e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34397,11 +34352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Trigger_Diolog
   playerTag: Player
   player: {fileID: 261395626}
-  Diolog_Test: {fileID: 248358842}
   InteractPoint: {fileID: 0}
   QUest: {fileID: 0}
-  completerDiologQuest: {fileID: 0}
-  completerGameObject: {fileID: 0}
 --- !u!1 &1214610414
 GameObject:
   m_ObjectHideFlags: 0
@@ -37863,7 +37815,7 @@ PrefabInstance:
       objectReference: {fileID: 1845031157}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: characterName
-      value: Mr Petel
+      value: Mr Patel
       objectReference: {fileID: 0}
     - target: {fileID: 7873578850685203550, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       propertyPath: PlayerController
@@ -38056,6 +38008,7 @@ MonoBehaviour:
   currentStamps: 0
   finalrig: {fileID: 1252672549}
   Trig: {fileID: 1947840065}
+  Trigger_Dialog_Components: {fileID: 880357726}
 --- !u!4 &1346654077
 Transform:
   m_ObjectHideFlags: 0
@@ -42199,6 +42152,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679125443}
   m_CullTransparentMesh: 1
+--- !u!1 &1685757968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 229660837}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1685757973
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685757968}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.010416602, y: 0.03157824}
+  m_Radius: 0.35999933
 --- !u!1 &1699109605
 GameObject:
   m_ObjectHideFlags: 0
@@ -47461,11 +47455,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Trigger_Diolog
   playerTag: Player
   player: {fileID: 261395626}
-  Diolog_Test: {fileID: 350045252}
   InteractPoint: {fileID: 0}
   QUest: {fileID: 0}
-  completerDiologQuest: {fileID: 151030379}
-  completerGameObject: {fileID: 151030376}
 --- !u!4 &2065485101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
@@ -47891,11 +47882,34 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2111681639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1691180842873493910, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 411359361}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2119523174 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3211503089818645930, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 411359361}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2119523177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111681639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
+  Diolog_Test: {fileID: 435559038}
+  SceneLoader: {fileID: 0}
+  wasInConvo: 0
+  afterConvo: 3
+  otherGameObject: {fileID: 2062979792}
+  exsplainerScene: 
 --- !u!1 &2135377305
 GameObject:
   m_ObjectHideFlags: 0

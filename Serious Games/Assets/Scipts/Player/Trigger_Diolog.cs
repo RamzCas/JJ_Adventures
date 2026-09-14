@@ -7,11 +7,11 @@ public class Trigger_Diolog : MonoBehaviour
     public string playerTag;
     public GameObject player;
     //private BoxCollider2D BoxCollider2D;
-    public Diolog_Test Diolog_Test;
+    //public Diolog_Test Diolog_Test;
     public GameObject InteractPoint;
     public GameObject QUest;
-    public Diolog_Test completerDiologQuest;
-    public GameObject completerGameObject;
+    //public Diolog_Test completerDiologQuest;
+    //public GameObject completerGameObject;
 
 
     /*public string[] DialogLines;

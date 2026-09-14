@@ -7,6 +7,7 @@ public class Game_Manager : MonoBehaviour
     public int currentStamps;
     public GameObject finalrig;
     public GameObject Trig;
+    public Trigger_Dialog_Components Trigger_Dialog_Components;
 
     private void Update()
     {
@@ -22,10 +23,11 @@ public class Game_Manager : MonoBehaviour
             //Debug.Log("To_Marbels");
         }
 
-        if (currentStamps == 8) 
+        if (currentStamps == 7) 
         {
             finalrig.SetActive(true);
             Trig.SetActive(true);
+            Trigger_Dialog_Components.InConvo = true;
         }
     }
 }
