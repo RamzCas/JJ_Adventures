@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 21863993}
   - component: {fileID: 21863994}
   - component: {fileID: 21863995}
+  - component: {fileID: 21863996}
   m_Layer: 0
   m_Name: Activate_FreebeQuest
   m_TagString: Untagged
@@ -317,7 +318,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21863990}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
   m_Name: 
@@ -329,6 +330,20 @@ MonoBehaviour:
   otherGameObject: {fileID: 1397050864}
   exsplainerScene: 
   QuestManager: {fileID: 1397050865}
+--- !u!114 &21863996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21863990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9944d38e009384cb4b426e903fc9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NeedQuest
+  QuestManager: {fileID: 1338029875}
+  Do_After_Convo: {fileID: 21863993}
 --- !u!1 &30086860
 GameObject:
   m_ObjectHideFlags: 0
@@ -13469,6 +13484,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1913694125}
+    - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1913694128}
   m_SourcePrefab: {fileID: 100100000, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
 --- !u!4 &229660838 stripped
 Transform:
@@ -16312,25 +16330,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 260425054930637962, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
   m_PrefabInstance: {fileID: 411359361}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &301574814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301574807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
-  Diolog_Test: {fileID: 301574810}
-  SceneLoader: {fileID: 0}
-  wasInConvo: 0
-  afterConvo: 2
-  otherGameObject: {fileID: 301574807}
-  exsplainerScene: 
-  QuestManager: {fileID: 0}
 --- !u!114 &301574815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16350,6 +16349,25 @@ MonoBehaviour:
   otherGameObject: {fileID: 0}
   exsplainerScene: 
   QuestManager: {fileID: 69179661}
+--- !u!114 &301574818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301574807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Do_After_Convo
+  Diolog_Test: {fileID: 301574810}
+  SceneLoader: {fileID: 0}
+  wasInConvo: 0
+  afterConvo: 2
+  otherGameObject: {fileID: 301574807}
+  exsplainerScene: 
+  QuestManager: {fileID: 0}
 --- !u!114 &302263707 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7329711283324398587, guid: 42ccc94f67c532e4cbddff812ecc9ae1, type: 3}
@@ -18645,10 +18663,10 @@ PrefabInstance:
       addedObject: {fileID: 2119523177}
     - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 301574814}
+      addedObject: {fileID: 301574815}
     - targetCorrespondingSourceObject: {fileID: 4068142696359704758, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 301574815}
+      addedObject: {fileID: 301574818}
     - targetCorrespondingSourceObject: {fileID: 1163457111219503919, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1534160517}
@@ -20557,6 +20575,17 @@ MonoBehaviour:
   otherGameObject: {fileID: 526161963}
   exsplainerScene: 
   QuestManager: {fileID: 0}
+--- !u!114 &529022430 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1869487577064165594, guid: 2d894f0b1e1f3734e9215a9fd29f76a9, type: 3}
+  m_PrefabInstance: {fileID: 636887527}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02a4e7f4357e83419cba095139c2630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestManager
 --- !u!1 &531035671
 GameObject:
   m_ObjectHideFlags: 0
@@ -41864,7 +41893,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: tent
+  m_text: Tower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b776d147d23e1d444b9d1beb4269c170, type: 2}
   m_sharedMaterial: {fileID: -8612935083082544827, guid: b776d147d23e1d444b9d1beb4269c170, type: 2}
@@ -45988,7 +46017,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181726726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6020bcdbebafc2e479d48101247d8ca7, type: 3}
   m_Name: 
@@ -46000,6 +46029,20 @@ MonoBehaviour:
   otherGameObject: {fileID: 1181726726}
   exsplainerScene: 
   QuestManager: {fileID: 0}
+--- !u!114 &1913694128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181726726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9944d38e009384cb4b426e903fc9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NeedQuest
+  QuestManager: {fileID: 529022430}
+  Do_After_Convo: {fileID: 1913694125}
 --- !u!1 &1914904018
 GameObject:
   m_ObjectHideFlags: 0

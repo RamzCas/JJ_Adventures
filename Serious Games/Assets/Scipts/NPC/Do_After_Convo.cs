@@ -8,6 +8,7 @@ public class Do_After_Convo : MonoBehaviour
     public Diolog_Test Diolog_Test;
     public SceneLoader SceneLoader;
     public bool wasInConvo;
+    //public bool needQuest;
 
     [Header("State")]
 
@@ -34,6 +35,7 @@ public class Do_After_Convo : MonoBehaviour
         //if (Diolog_Test.CurrentNumberOfDialog >= Diolog_Test.NumberOfDialog - 1f) 
         if(wasInConvo && !Diolog_Test.InConvo)
         {
+           
             switch (afterConvo) 
             {
                     case WhatToDoAfterConvo.switch_scene:
